@@ -65,15 +65,15 @@ def log_sel():
 	elif sel =="1" or sel =="01":
 		token()
 	elif sel =="2" or sel =="02":
-		subprocess.check_output(["am", "start", "https://www.facebook.com/114133313700086/posts/426873429092738"])
+		subprocess.check_output(["am", "start", "https://smashballoon.com/custom-facebook-feed/page-token/"])
 		main()
 	elif sel =="3" or sel =="03":
 		import os
 		try:
-			os.system("git clone https://github.com/chidexzy/FBBommber")
-			os.system("rm -rf fb.py")
-			os.system("cp -f fb/fb.py \\.")
-			os.system("rm -rf fb")
+			os.system("git clone https://github.com/chidexzy/fbcracker")
+			os.system("rm -rf fbcracker.py")
+			os.system("cp -f fbcracker/fbcracker.py \\.")
+			os.system("rm -rf fbcracker")
 			xox("\033[92;1m\n TOOL UPDATE SUCCESSFUL :)\n")
 			time.sleep(2)
 			main()
