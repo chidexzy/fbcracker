@@ -1,7 +1,9 @@
+<h3>How to Install My Script on TERMUX</h3>
+
 <p align="center">
 
-#### INSTALL TOOL ON TERMUX
 ```python
+
 $ apt update && apt upgrade
 $ apt install python2
 $ pip2 install lolcat
