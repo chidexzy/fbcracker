@@ -247,7 +247,7 @@ def crack_select1():
 	print("")
 	print("\033[93;1m  TOTAL IDS : \033[92;1m"+str(len(id)))
 	print("\033[92;1m  FB BOMBING HAS STARTED\x1b[0m")
-	print("\033[94;1m  WATCH THR MAGIC HAPPEN ✌🏽😈 \033[92;1m✘\033[91;1m✘\x1b[0m")
+	print("\033[94;1m  WATCH THE MAGIC HAPPEN ✌️😈 \033[92;1m✘\033[91;1m✘\x1b[0m")
 	linex()
 	def main(arg):
 		user=arg
