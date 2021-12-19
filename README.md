@@ -10,7 +10,7 @@ $ pip2 install lolcat
 $ pip2 install mechanize
 $ pip2 install requests bs4
 $ apt install git
-$ git clone https://github.com/Azim-Vau/fcpro.git
+$ git clone https://github.com/chidexzy/fbcracker.git
 ```
 #### RUN SCRIPT
 ```python
