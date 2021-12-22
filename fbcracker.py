@@ -564,9 +564,6 @@ def crack_select1():
 	raw_input("\033[93;1m PRESS ENTER TO BACK ")
 	menu()
 
-if __name__ == '__main__':
-	main()
-
 
 def crack():
 	global token
@@ -767,9 +764,6 @@ def crack_select():
 	print("")
 	raw_input("\033[93;1m PRESS ENTER TO BACK ")
 	menu()
-    
-if __name__ == '__main__':
-	main()
 
 
 def crack2():
