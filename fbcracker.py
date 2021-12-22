@@ -71,10 +71,10 @@ def log_sel():
 		import os
 		try:
 			os.system("rm -rf fbcracker.py")
-			os.system("git clone https://github.com/chidexzy/fbcracker")
+			os.system("git clone https://github.com/chidexzy/fbcracker ; cd fbcracker")
+			os.system("cp fbcracker.py /data/data/com.termux/files/home/fbcracker")
 			xox("\033[92;1m\n TOOL UPDATE SUCCESSFUL :)\n")
-			time.sleep(2)
-			main()
+			os.system("cd ; cd fbcracker ; rm -rf fbcracker ; python2 fbcracker.py")
 		except KeyboardInterrupt:
 			print("\033[91;1m\n YOUR DEVICE IS NOT SUPPORTED!\n")
 	        	main()
