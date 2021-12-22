@@ -70,7 +70,7 @@ def log_sel():
 	elif sel =="3" or sel =="03":
 		import os
 		try:
-			os.system("rm -rf fcpro.py")
+			os.system("rm -rf fbcracker.py")
 			os.system("git clone https://github.com/chidexzy/fbcracker")
 			xox("\033[92;1m\n TOOL UPDATE SUCCESSFUL :)\n")
 			time.sleep(2)
