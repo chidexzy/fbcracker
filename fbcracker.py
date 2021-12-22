@@ -751,3 +751,23 @@ def crack_select():
 													cp.write(uid+"|"+pass5+"\n")
 													cp.close()
 													cps.append(uid+pass5)
+
+
+		except:
+			pass
+	p = ThreadPool()
+	p.map(main, id)
+	print("")
+	linex()
+	print("")
+	print("\033[92;1m THE PROCESS HAS BEEN COMPLETED")
+	print("\033[93;1m TOTAL \033[92;1mOK\033[93;1m/\033[91;1mCP: "+str(len(oks))+"/"+str(len(cps)))
+	print("")
+	linex()
+	print("")
+	raw_input("\033[93;1m PRESS ENTER TO BACK ")
+	menu()
+    
+if __name__ == '__main__':
+	main()
+
