@@ -148,7 +148,9 @@ def menu():
     print("")
     print("\t\033[92;1m  BY OKWUDIRE PROMISE")
     print("")
-    print("\033[93;1m  [1] CRACK WITH DREX SCRIPT")
+    print("\033[92;1m  [1] CRACK WITH PASSWORD 1")
+    print("\033[93;1m  [2] CRACK WITH PASSWORD 2")
+    print("\033[94;1m  [3] CRACK WITH ALL PASSWORDS")
     print('\033[91;1m  [0] BACK')
     print("")
     menu_option()
@@ -157,6 +159,10 @@ def menu_option():
 	select = raw_input("\033[92;1m  CHOOSE : ")
 	if select =="1":
 		crack1()
+	elif select =="2":
+		crack()
+	elif select =="3":
+	    crack2()
 	elif select =="0":
 		main()
 	else:
