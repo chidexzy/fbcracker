@@ -71,9 +71,6 @@ def log_sel():
 		import os
 		try:
 			os.system("git clone https://github.com/chidexzy/fbcracker")
-			os.system("rm -rf fbcracker.py")
-			os.system("cp -f fbcracker/fbcracker.py \\.")
-			os.system("rm -rf fbcracker")
 			xox("\033[92;1m\n TOOL UPDATE SUCCESSFUL :)\n")
 			time.sleep(2)
 			main()
