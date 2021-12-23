@@ -50,7 +50,7 @@ def main():
 	print("\t\033[93;1m      MAIN MENU\x1b[0m")
 	print("")
 	print("\033[92;1m  [1] START CRACK")
-        print("\033[91:1m  [2] SHOW CHECKPOINTS")
+        print("\033[91;1m  [2] SHOW CHECKPOINTS")
 	print("\033[93;1m  [3] HOW TO GET ACCESS TOKEN")
 	print("\033[94;1m  [4] UPDATE TOOL")
 	print("\033[96;1m  [5] CHAT ME UP ON WHATSAPP \033[92;1m✘\033[91;1m✘")
@@ -66,15 +66,7 @@ def log_sel():
 	elif sel =="1" or sel =="01":
 		token()
 	elif sel =="2" or sel =="02":
-		os.system('clear')
-		logo()
-		print("")
-		print("")
-		cps=open('rat.txt','r').read()
-		print cps
-                print("")
-		raw_input("\n\t\033[92;1m Press ENTER to go Back")
-		menu()
+		check_cps()
 	elif sel =="3" or sel =="03":
 		subprocess.check_output(["am", "start", "https://smashballoon.com/custom-facebook-feed/page-token/"])
 		main()
@@ -98,6 +90,16 @@ def log_sel():
 		print("\t\033[91;1m  SELECT VALID OPTION")
 		print("")
 		log_sel()
+def check_cps():
+    os.system('clear')
+	logo()
+	print("")
+	print("")
+	cps = open('rat.txt','r').read()
+	print "\033[1;92mYour token\033[1;91m :\033[1;97m "+cps
+        print("")
+	raw_input("\n\t\033[92;1m Press ENTER to go Back")
+	menu()
 
 def token():
     os.system("clear")
