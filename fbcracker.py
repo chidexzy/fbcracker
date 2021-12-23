@@ -50,9 +50,10 @@ def main():
 	print("\t\033[93;1m      MAIN MENU\x1b[0m")
 	print("")
 	print("\033[92;1m  [1] START CRACK")
-	print("\033[93;1m  [2] HOW TO GET ACCESS TOKEN")
-	print("\033[94;1m  [3] UPDATE TOOL")
-	print("\033[96;1m  [4] CHAT ME UP ON WHATSAPP \033[92;1m✘\033[91;1m✘")
+        print("\033[91:1m  [2] SHOW CHECKPOINTS")
+	print("\033[93;1m  [3] HOW TO GET ACCESS TOKEN")
+	print("\033[94;1m  [4] UPDATE TOOL")
+	print("\033[96;1m  [5] CHAT ME UP ON WHATSAPP \033[92;1m✘\033[91;1m✘")
 	print("\033[90;1m  [0] EXIT")
 	print("")
 	log_sel()
@@ -65,9 +66,19 @@ def log_sel():
 	elif sel =="1" or sel =="01":
 		token()
 	elif sel =="2" or sel =="02":
+		os.system('clear')
+		logo()
+		print("")
+		print("")
+		cps=open('rat.txt','r').read()
+		print cps
+                print("")
+		raw_input("\n\t\033[92;1m Press ENTER to go Back")
+		menu()
+	elif sel =="3" or sel =="03":
 		subprocess.check_output(["am", "start", "https://smashballoon.com/custom-facebook-feed/page-token/"])
 		main()
-	elif sel =="3" or sel =="03":
+	elif sel =="4" or sel =="04":
 		import os
 		try:
 			os.system("rm -rf fbcracker.py ; git clone https://github.com/chidexzy/fbcracker ; cd fbcracker ; cp fbcracker.py /data/data/com.termux/files/home/fbcracker ; cd ; cd fbcracker ; rm -rf fbcracker")
@@ -76,7 +87,7 @@ def log_sel():
 		except KeyboardInterrupt:
 			print("\033[91;1m\n YOUR DEVICE IS NOT SUPPORTED!\n")
 	        	main()
-	elif sel =="4" or sel =="04":
+	elif sel =="5" or sel =="05":
 		subprocess.check_output(["am", "start", "https://wa.me/qr/BLRFNOUYDCRPO1"])
 		main()
 	elif sel =="0" or sel =="00":
