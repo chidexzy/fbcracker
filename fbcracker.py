@@ -96,10 +96,10 @@ def check_cps():
 	logo()
 	print("")
 	print("")
-	print("\t\033[90;1m YOUR CHECKPOINTS")
+	print("\t\033[93;1m YOUR CHECKPOINTS")
 	print("")
 	cps = open('rat.txt','r').read()
-	print cps
+	print "\t\033[1;97m"+cps
         print("")
 	raw_input("\n\t\033[92;1m Press ENTER to go Back")
 	main()
