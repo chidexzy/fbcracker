@@ -50,7 +50,7 @@ def main():
 	print("\t\033[93;1m      MAIN MENU\x1b[0m")
 	print("")
 	print("\033[92;1m  [1] START CRACK")
-        print("\033[91;1m  [2] SHOW CHECKPOINTS")
+        print("\033[91;1m  [2] VIEW & SAVE CHECKPOINTS")
 	print("\033[93;1m  [3] HOW TO GET ACCESS TOKEN")
 	print("\033[94;1m  [4] UPDATE TOOL")
 	print("\033[96;1m  [5] CHAT ME UP ON WHATSAPP \033[92;1m✘\033[91;1m✘")
@@ -101,9 +101,9 @@ def check_cps():
 	cps = open('rat.txt','r').read()
 	print "\033[1;97m"+cps
         print("")
-	raw_input("\n\t\033[92;1m Press ENTER to Save and go Back")
+	raw_input("\n\033[92;1m Press ENTER to Save and go Back")
         os.system("cp rat.txt /storage/emulated/0")
-        xox("\n\t\033[91;1m CHECKPOINTS SAVED SUCCESSFULLY 👍")
+        xox("\n\033[91;1m CHECKPOINTS SAVED SUCCESSFULLY 👍")
 	main()
 
 def token():
