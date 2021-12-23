@@ -99,7 +99,7 @@ def check_cps():
 	print("\t\033[93;1m YOUR CHECKPOINTS")
 	print("")
 	cps = open('rat.txt','r').read()
-	print "\n\033[1;97m"+cps
+	print "\033[1;97m"+cps
         print("")
 	raw_input("\n\t\033[92;1m Press ENTER to go Back")
 	main()
