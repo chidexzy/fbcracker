@@ -104,6 +104,7 @@ def check_cps():
 	raw_input("\n\033[92;1m Press ENTER to Save and go Back")
         os.system("cp rat.txt /storage/emulated/0")
         xox("\n\033[91;1m CHECKPOINTS SAVED SUCCESSFULLY 👍")
+        time.sleep(2)
 	main()
 
 def token():
