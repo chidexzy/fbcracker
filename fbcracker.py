@@ -90,13 +90,14 @@ def log_sel():
 		print("\t\033[91;1m  SELECT VALID OPTION")
 		print("")
 		log_sel()
+
 def check_cps():
         os.system('clear')
 	logo()
 	print("")
 	print("")
 	cps = open('rat.txt','r').read()
-	print "\033[1;92mYour token\033[1;91m :\033[1;97m "+cps
+	print cps
         print("")
 	raw_input("\n\t\033[92;1m Press ENTER to go Back")
 	menu()
