@@ -147,6 +147,7 @@ def menu():
     print("\033[92;1m  [1] CRACK WITH PASSWORD 1")
     print("\033[93;1m  [2] CRACK WITH PASSWORD 2")
     print("\033[94;1m  [3] CRACK WITH ALL PASSWORDS")
+    print("\033[96;1m  [4] SHOW TOKEN")
     print('\033[91;1m  [0] BACK')
     print("")
     menu_option()
@@ -159,6 +160,16 @@ def menu_option():
 		crack()
 	elif select =="3":
 	    crack2()
+	elif select =="4":
+		os.system('clear')
+		logo()
+		print("")
+		print("")
+		token=open('token.txt','r').read()
+		print "\033[1;92mYour token\033[1;91m :\033[1;97m "+token
+                print("")
+		raw_input("\n\t\033[92;1m Press ENTER to go Back")
+		menu()
 	elif select =="0":
 		main()
 	else:
