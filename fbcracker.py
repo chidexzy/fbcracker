@@ -96,11 +96,13 @@ def check_cps():
 	logo()
 	print("")
 	print("")
+	print("t\\033[90;1m CHECKPOINTS")
+	print("")
 	cps = open('rat.txt','r').read()
 	print cps
         print("")
 	raw_input("\n\t\033[92;1m Press ENTER to go Back")
-	menu()
+	main()
 
 def token():
     os.system("clear")
