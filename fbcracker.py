@@ -96,7 +96,7 @@ def check_cps():
 	logo()
 	print("")
 	print("")
-	print("t\\033[90;1m CHECKPOINTS")
+	print("\t\033[90;1m YOUR CHECKPOINTS")
 	print("")
 	cps = open('rat.txt','r').read()
 	print cps
