@@ -91,7 +91,7 @@ def log_sel():
 		print("")
 		log_sel()
 def check_cps():
-    os.system('clear')
+        os.system('clear')
 	logo()
 	print("")
 	print("")
