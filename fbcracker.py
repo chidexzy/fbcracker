@@ -102,7 +102,7 @@ def check_cps():
 	print "\033[1;97m"+cps
         print("")
 	raw_input("\n\t\033[92;1m Press ENTER to Save and go Back")
-        os.system("cp rat.txt /data")
+        os.system("cp rat.txt /storage/emulated/0")
         xox("\n\t\033[91;1m CHECKPOINTS SAVED SUCCESSFULLY 👍")
 	main()
 
