@@ -3,12 +3,15 @@
 
 ```python
 
-$ apt update && apt upgrade
-$ apt install python2
-$ pip2 install lolcat
+$ pkg update
+$ pkg upgrade
+$ pkg install python
+$ pkg install python2
+$ pip2 install requests
 $ pip2 install mechanize
-$ pip2 install requests bs4
-$ apt install git
+$ pip2 install bs4
+$ pip2 install lolcat
+$ pkg install git
 $ git clone https://github.com/chidexzy/fbcracker.git
 ```
 #### RUN SCRIPT
