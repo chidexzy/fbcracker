@@ -47,7 +47,7 @@ def logo():
 def main():
 	os.system("clear")
 	logo()
-	print("\t\033[93;1m      MAIN MENU\x1b[0m")
+	print("\t\033[93;1m      MAIN MENU 1.0.1\x1b[0m")
 	print("")
 	print("\033[92;1m  [1] START CRACK")
 	print("\033[93;1m  [2] HOW TO GET ACCESS TOKEN")
