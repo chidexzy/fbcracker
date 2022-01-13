@@ -7,7 +7,7 @@
 
 
 try:
-	import os,sys,time,platform,datetime,random,hashlib,re,threading,json,getpass,urllib,cookielib,requests,uuid,string,subprocess
+	import os,sys,time,platform,datetime,random,hashlib,re,threading,json,getpass,urllib,cookielib,requests,uuid,string,subprocess,mechanize
 	from multiprocessing.pool import ThreadPool
 	from requests.exceptions import ConnectionError
 except ImportError:
