@@ -10,6 +10,7 @@ try:
 	import os,sys,time,platform,datetime,random,hashlib,re,threading,json,getpass,urllib,cookielib,requests,uuid,string,subprocess,mechanize
 	from multiprocessing.pool import ThreadPool
 	from requests.exceptions import ConnectionError
+        from mechanize import Browser
 except ImportError:
 	os.system("python2 fbcracker.py")
 
