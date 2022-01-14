@@ -59,7 +59,7 @@ loc = requests.get('https://ipapi.com/ip_api.php?ip=' + ip, headers={'Referer': 
 def linex():
 	os.system('echo  "\n ======================================\n" | lolcat -a -d 2 -s 50')
 def logo():
-	os.system('echo "\n\t ╔═══╗╔═══╗╔═══╗╔═╗╔═╗ \n\t ╚╗╔╗║║╔═╗║║╔══╝╚╗╚╝╔╝ \n\t  ║║║║║╚═╝║║╚══╗ ╚╗╔╝  \n\t  ║║║║║╔╗╔╝║╔══╝ ╔╝╚╗  \n\t ╔╝╚╝║║║║╚╗║╚══╗╔╝╔╗╚╗ \n\t ╚═══╝╚╝╚═╝╚═══╝╚═╝╚═╝ \n  \n    ╔═════════════════════════════╗\n    ║ TOOL NAME: { FB CRACKER }   ║\n    ║ AUTHOR   : Chidexzy         ║\n    ╚═════════════════════════════╝" | lolcat -a -d 2 -s 50')	
+	os.system('echo "\n\t ╔═══╗  ╔═══╗  ╔═══╗  ╔═╗╔═╗ \n\t ╚╗╔╗║  ║╔═╗║  ║╔══╝  ╚╗╚╝╔╝ \n\t  ║║║║  ║╚═╝║  ║╚══╗   ╚╗╔╝  \n\t  ║║║║  ║╔╗╔╝  ║╔══╝   ╔╝╚╗  \n\t ╔╝╚╝║  ║║║╚╗  ║╚══╗  ╔╝╔╗╚╗ \n\t ╚═══╝  ╚╝╚═╝  ╚═══╝  ╚═╝╚═╝ \n  \n    ╔═════════════════════════════╗\n    ║ TOOL NAME: { FB CRACKER }   ║\n    ║ AUTHOR   : Chidexzy         ║\n    ╚═════════════════════════════╝" | lolcat -a -d 2 -s 50')	
 
 def main():
 	os.system("clear")
@@ -294,6 +294,7 @@ def crack_select1():
 	os.system("clear")
 	logo()
 	print("")
+	print("\033[92;1m  CLONING FROM : "+q["name"])
 	print("\033[93;1m  TOTAL IDS : \033[92;1m"+str(len(id)))
 	print("\033[92;1m  FB BOMBING HAS STARTED\x1b[0m")
 	print("\033[93;1m  WATCH THE MAGIC HAPPEN ✌️😈 \033[92;1m✘\033[91;1m✘\x1b[0m")
@@ -660,6 +661,7 @@ def crack_select():
 	os.system("clear")
 	logo()
 	print("")
+	print("\033[92;1m  CLONING FROM : "+q["name"])
 	print("\033[93;1m  TOTAL IDS : \033[92;1m"+str(len(id)))
 	print("\033[92;1m  FB BOMBING HAS STARTED\x1b[0m")
 	print("\033[93;1m  WATCH THE MAGIC HAPPEN ✌️😈 \033[92;1m✘\033[91;1m✘\x1b[0m")
@@ -887,6 +889,7 @@ def crack_select2():
 	os.system("clear")
 	logo()
 	print("")
+	print("\033[92;1m  CLONING FROM : "+q["name"])
 	print("\033[93;1m  TOTAL IDS : \033[92;1m"+str(len(id)))
 	print("\033[92;1m  FB BOMBING HAS STARTED\x1b[0m")
 	print("\033[93;1m  WATCH THE MAGIC HAPPEN ✌️😈 \033[92;1m✘\033[91;1m✘\x1b[0m")
