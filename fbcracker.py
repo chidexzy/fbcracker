@@ -69,7 +69,7 @@ def main():
 	print("\033[92;1m  [1] START CRACK")
         print("\033[91;1m  [2] VIEW & SAVE CHECKPOINTS")
 	print("\033[93;1m  [3] HOW TO GET ACCESS TOKEN")
-	print("\033[94;1m  [4] UPDATE TOOL 1.6")
+	print("\033[94;1m  [4] UPDATE TOOL 1.7")
 	print("\033[96;1m  [5] CHAT ME UP ON WHATSAPP \033[92;1m✘\033[91;1m✘")
 	print("\033[90;1m  [0] EXIT")
 	print("")
