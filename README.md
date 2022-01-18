@@ -18,3 +18,8 @@ $ git clone https://github.com/chidexzy/fbcracker.git
 ```python
 $ cd fbcracker
 $ python2 fbcracker.py
+```python
+#### TOOL LOGIN
+```
+Username:
+Password:
