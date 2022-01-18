@@ -55,6 +55,8 @@ except requests.exceptions.ConnectionError:
 	
 ip = requests.get('https://api.ipify.org').text.strip()
 loc = requests.get('https://ipapi.com/ip_api.php?ip=' + ip, headers={'Referer': 'https://ip-api.com/', 'Content-Type': 'application/json; charset=utf-8', 'User-Agent': 'Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Mobile Safari/537.36'}).json()['country_name'].upper()
+CorrectUsername = "fbcracker"
+CorrectPassword = "ragnarok"
 	
 def linex():
 	os.system('echo  "\n ======================================\n" | lolcat -a -d 2 -s 50')
@@ -123,6 +125,26 @@ def check_cps():
         xox("\n\033[91;1m CHECKPOINTS SAVED SUCCESSFULLY 👍")
         time.sleep(2)
 	main()
+
+def login():
+        os.system("clear")
+        logo()
+        print("")
+        username = raw_input("\033[1;97m\x1b[1;91mTool Username \x1b[1;97m»» \x1b[1;97m")
+        if (username == CorrectUsername):
+            password = raw_input("\033[1;97m \x1b[1;91mTool Password  \x1b[1;97m» \x1b[1;97m")
+            if (password == CorrectPassword):
+                print "\033[1;92mLogged in successfully 💪😈"
+	        time.sleep(1)
+                token()
+            else:
+                print "\033[1;94mWRONG PASSWORD ❌❌❌"
+                time.sleep(1)
+                login()
+        else:
+            print "\033[1;94mWRONG USERNAME ❌❌❌"
+            time.sleep(1)
+            login()
 
 def token():
     os.system("clear")
