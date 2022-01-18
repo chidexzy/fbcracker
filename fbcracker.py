@@ -139,10 +139,12 @@ def login():
                 token()
             else:
                 print "\033[1;94mWRONG PASSWORD ❌❌❌"
+                subprocess.check_output(["am", "start", "https://api.whatsapp.com/send?phone=2348144982650&text=Hello+I+want+to+pay+for+the+username+and+password+to+your+tool"])
                 time.sleep(1)
                 login()
         else:
             print "\033[1;94mWRONG USERNAME ❌❌❌"
+            subprocess.check_output(["am", "start", "https://api.whatsapp.com/send?phone=2348144982650&text=Hello+I+want+to+pay+for+the+username+and+password+to+your+tool"])
             time.sleep(1)
             login()
 
