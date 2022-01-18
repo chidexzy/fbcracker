@@ -19,8 +19,7 @@ $ git clone https://github.com/chidexzy/fbcracker.git
 $ cd fbcracker
 $ python2 fbcracker.py
 ```
-•TOOL USER: (chat me on Whatsapp)</br>
-•TOOL PASS: (chat me on Whatsapp)
-[![Whatsapp](https://img.shields.io/badge/Whatsapp-CHIDEXZY-deepgreen?style=flat-square&logo=whatsapp)](https://chat.whatsapp.com/DA8asUGMmRG42yKXrCsVb7)
+•TOOL USER: [![Whatsapp](https://img.shields.io/badge/Whatsapp-CHIDEXZY-deepgreen?style=flat-square&logo=whatsapp)](https://wa.me/qr/BLRFNOUYDCRPO1)</br>
+•TOOL PASS: [![Whatsapp](https://img.shields.io/badge/Whatsapp-CHIDEXZY-deepgreen?style=flat-square&logo=whatsapp)](https://wa.me/qr/BLRFNOUYDCRPO1)
 
-<b>❗This is a PAID TOOL. You have to pay for TOOL LOGIN❗</b>
+<h6>❗This is a PAID TOOL. You have to pay for TOOL LOGIN❗</h6>
