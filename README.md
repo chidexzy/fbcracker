@@ -1,6 +1,6 @@
-#### SCREENSHOT
+<h2>SCREENSHOT</h2>
 
-<a img src="https://raw.githubusercontent.com/chidexzy/fbcracker/main/20220121_154002.jpg?token=GHSAT0AAAAAABOJVFBOZXKPSGIHAGJLZGIKYPKY32Q" />
+![image](https://github.com/chidexzy/fbcracker/blob/main/20220121_154002.jpg)
 
 <h4>How to Install My Script on TERMUX</h4>
 <p align="center">
