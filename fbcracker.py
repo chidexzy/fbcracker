@@ -49,7 +49,7 @@ except requests.exceptions.ConnectionError:
 ip = requests.get('https://api.ipify.org').text.strip()
 loc = requests.get('https://ipapi.com/ip_api.php?ip=' + ip, headers={'Referer': 'https://ip-api.com/', 'Content-Type': 'application/json; charset=utf-8', 'User-Agent': 'Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Mobile Safari/537.36'}).json()['country_name'].upper()
 CorrectUsername = "fbcracker"
-CorrectPassword = "ragnarok"
+CorrectPassword = "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"
 	
 def linex():
 	os.system('echo  "\n ======================================\n" | lolcat -a -d 2 -s 50')
