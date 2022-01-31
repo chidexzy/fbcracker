@@ -76,7 +76,7 @@ def log_sel():
 		print("\t\033[91;1m  SELECT AN OPTION STUPID -_")
 		log_sel()
 	elif sel =="1" or sel =="01":
-		token()
+		login()
 	elif sel =="2" or sel =="02":
 		check_cps()
 	elif sel =="3" or sel =="03":
