@@ -64,7 +64,7 @@ def main():
 	print("\033[92;1m  [1] START CRACK")
         print("\033[91;1m  [2] VIEW & SAVE CHECKPOINTS")
 	print("\033[93;1m  [3] HOW TO GET ACCESS TOKEN")
-	print("\033[94;1m  [4] UPDATE TOOL 01.28")
+	print("\033[94;1m  [4] UPDATE TOOL 03.15")
 	print("\033[96;1m  [5] CHAT ME UP ON WHATSAPP \033[92;1m✘\033[91;1m✘")
 	print("\033[90;1m  [0] EXIT")
 	print("")
@@ -248,7 +248,7 @@ def crack1():
 	print("")
 	print("\033[92;1m  [1] CRACK PUBLIC ID")
 	print("\033[93;1m  [2] CRACK FOLLOWERS")
-	print("\033[93;1m  [3] CRACK REACTIONS")
+	print("\033[94;1m  [3] CRACK REACTIONS")
 	print("\033[91;1m  [0] BACK")
 	print("")
 	crack_select1()
@@ -637,7 +637,7 @@ def crack():
 	print("")
 	print("\033[92;1m  [1] CRACK PUBLIC ID")
 	print("\033[93;1m  [2] CRACK FOLLOWERS")
-	print("\033[93;1m  [2] CRACK REACTIONS")
+	print("\033[94;1m  [3] CRACK REACTIONS")
 	print("\033[91;1m  [0] BACK")
 	print("")
 	crack_select()
@@ -661,7 +661,7 @@ def crack_select():
 			t +=1
 			idt = raw_input("\033[93;1m  INPUT PUBLIC ID (\033[92;1m%s\033[93;1m) : \033[92;1m"%(t))
 			try:
-				for i in requests.get("https://graph.facebook.com/"+idt+"/friends?access_token="+token+"&limit=999999).json()["data"]:
+				for i in requests.get("https://graph.facebook.com/"+idt+"/friends?access_token="+token+"&limit=999999").json()["data"]:
 					uid = i["id"].encode('utf-8')
 					na = i["name"].encode('utf-8')
 					id.append(uid+"|"+na)
@@ -887,7 +887,7 @@ def crack2():
 	print("")
 	print("\033[92;1m  [1] CRACK PUBLIC ID")
 	print("\033[93;1m  [2] CRACK FOLLOWERS")
-	print("\033[93;1m  [2] CRACK REACTIONS")
+	print("\033[94;1m  [3] CRACK REACTIONS")
 	print("\033[91;1m  [0] BACK")
 	print("")
 	crack_select2()
