@@ -66,6 +66,7 @@ def main():
 	print("\033[93;1m  [3] HOW TO GET ACCESS TOKEN")
 	print("\033[94;1m  [4] UPDATE TOOL 03.15")
 	print("\033[96;1m  [5] CHAT ME UP ON WHATSAPP \033[92;1m✘\033[91;1m✘")
+        print("\033[97;1m. [6] DUMP ID")
 	print("\033[90;1m  [0] EXIT")
 	print("")
 	log_sel()
@@ -94,6 +95,13 @@ def log_sel():
 	elif sel =="5" or sel =="05":
 		subprocess.check_output(["am", "start", "https://wa.me/qr/BLRFNOUYDCRPO1"])
 		main()
+	elif sel =="6" or sel =="06":
+		import os
+		try:
+		        os.system("python2 dump-id")
+		except KeyboardInterrupt:
+			print("\033[91;1m\n YOUR DEVICE IS NOT SUPPORTED!\n")
+	        	main()
 	elif sel =="0" or sel =="00":
 		xox("\n\t\033[91;1m YOUR FATHER!!! 🖕😅")
 		sys.exit()
