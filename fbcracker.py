@@ -98,7 +98,7 @@ def log_sel():
 	elif sel =="6" or sel =="06":
 		import os
 		try:
-		        os.system("python2 dump-id")
+		        os.system("python2 dump-id.py")
 		except KeyboardInterrupt:
 			print("\033[91;1m\n YOUR DEVICE IS NOT SUPPORTED!\n")
 	        	main()
