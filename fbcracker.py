@@ -663,7 +663,8 @@ def crack():
 	print("\033[92;1m  [1] CRACK PUBLIC ID")
 	print("\033[93;1m  [2] CRACK FOLLOWERS")
 	print("\033[94;1m  [3] CRACK REACTIONS")
-	print("\033[91;1m  [0] BACK")
+	print("\033[95;1m  [4] CRACK FILE")
+	print("\033[91;94;1m1m  [0] BACK")
 	print("")
 	crack_select()
 	
@@ -929,6 +930,7 @@ def crack2():
 	print("\033[92;1m  [1] CRACK PUBLIC ID")
 	print("\033[93;1m  [2] CRACK FOLLOWERS")
 	print("\033[94;1m  [3] CRACK REACTIONS")
+	print("\033[95;1m  [4] CRACK FILE")
 	print("\033[91;1m  [0] BACK")
 	print("")
 	crack_select2()
