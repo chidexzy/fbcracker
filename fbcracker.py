@@ -332,6 +332,22 @@ def crack_select1():
 				print("\033[91;1m  CANNOT SCAN REACTIONS")
 			print("\033[94;1m  TOTAL IDS  : \033[0;92m%s\033[0;97m"%(len(id)))
 		time.sleep(3)
+	elif select =="4":
+		os.system("clear")
+		logo()
+		print("")
+		print("\t\033[93;1m   AUTO PASS CRACKING")
+		print("")
+		filelist = raw_input('\033[92;1m  INPUT FILE: ')
+		try:
+			for line in open(filelist, 'r').readlines():
+				id.append(line.strip())
+				
+		except IOError:
+			print("\t\033[91;1m  REQUESTED FILE NOT FOUND")
+			print("")
+			raw_input("\033[93;1m PRESS ENTER TO BACK")
+			crack1()
 	elif select =="0":
 	    menu()
 	else:
@@ -721,6 +737,22 @@ def crack_select():
 				print("\033[91;1m  CANNOT SCAN REACTIONS")
 			print("\033[94;1m  TOTAL IDS  : \033[0;92m%s\033[0;97m"%(len(id)))
 		time.sleep(3)
+	elif select =="4":
+		os.system("clear")
+		logo()
+		print("")
+		print("\t\033[93;1m   AUTO PASS CRACKING")
+		print("")
+		filelist = raw_input('\033[92;1m  INPUT FILE: ')
+		try:
+			for line in open(filelist, 'r').readlines():
+				id.append(line.strip())
+				
+		except IOError:
+			print("\t\033[91;1m  REQUESTED FILE NOT FOUND")
+			print("")
+			raw_input("\033[93;1m PRESS ENTER TO BACK")
+			crack()
 	elif select =="0":
 	    menu()
 	else:
@@ -971,6 +1003,22 @@ def crack_select2():
 				print("\033[91;1m  CANNOT SCAN REACTIONS")
 			print("\033[94;1m  TOTAL IDS  : \033[0;92m%s\033[0;97m"%(len(id)))
 		time.sleep(3)
+	elif select =="4":
+		os.system("clear")
+		logo()
+		print("")
+		print("\t\033[93;1m   AUTO PASS CRACKING")
+		print("")
+		filelist = raw_input('\033[92;1m  INPUT FILE: ')
+		try:
+			for line in open(filelist, 'r').readlines():
+				id.append(line.strip())
+				
+		except IOError:
+			print("\t\033[91;1m  REQUESTED FILE NOT FOUND")
+			print("")
+			raw_input("\033[93;1m PRESS ENTER TO BACK")
+			crack2()
 	elif select =="0":
 	    menu()
 	else:
