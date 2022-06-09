@@ -61,13 +61,13 @@ def main():
 	logo()
 	print("\t\033[93;1m      MAIN MENU\x1b[0m")
 	print("")
-	print("\033[92;1m  [1] START CRACK")
-        print("\033[91;1m  [2] VIEW & SAVE CHECKPOINTS")
-	print("\033[93;1m  [3] HOW TO GET ACCESS TOKEN")
-	print("\033[94;1m  [4] UPDATE TOOL 03.15")
-	print("\033[96;1m  [5] CHAT ME UP ON WHATSAPP \033[92;1m✘\033[91;1m✘")
-        print("\033[97;1m. [6] DUMP ID")
-	print("\033[90;1m  [0] EXIT")
+	print("\033[92;1m  [1] LOGIN")
+ 	print("\033[92;1m  [2] CRACK FILE")
+        print("\033[91;1m  [3] VIEW & SAVE CHECKPOINTS")
+	print("\033[93;1m  [4] HOW TO GET ACCESS TOKEN")
+	print("\033[94;1m  [5] UPDATE TOOL 03.15")
+	print("\033[96;1m  [6] CHAT ME UP ON WHATSAPP \033[92;1m✘\033[91;1m✘")
+        print("\033[90;1m  [0] EXIT")
 	print("")
 	log_sel()
 	
@@ -78,12 +78,12 @@ def log_sel():
 		log_sel()
 	elif sel =="1" or sel =="01":
 		token()
-	elif sel =="2" or sel =="02":
-		check_cps()
 	elif sel =="3" or sel =="03":
+		check_cps()
+	elif sel =="4" or sel =="04":
 		subprocess.check_output(["am", "start", "https://smashballoon.com/custom-facebook-feed/page-token/"])
 		main()
-	elif sel =="4" or sel =="04":
+	elif sel =="5" or sel =="05":
 		import os
 		try:
 			os.system("rm -rf fbcracker.py ; git clone https://github.com/chidexzy/fbcracker ; cd fbcracker ; cp fbcracker.py /data/data/com.termux/files/home/fbcracker ; cd ; cd fbcracker ; rm -rf fbcracker")
@@ -92,16 +92,9 @@ def log_sel():
 		except KeyboardInterrupt:
 			print("\033[91;1m\n YOUR DEVICE IS NOT SUPPORTED!\n")
 	        	main()
-	elif sel =="5" or sel =="05":
+	elif sel =="6" or sel =="06":
 		subprocess.check_output(["am", "start", "https://wa.me/qr/BLRFNOUYDCRPO1"])
 		main()
-	elif sel =="6" or sel =="06":
-		import os
-		try:
-		        os.system("python2 dump-id.py")
-		except KeyboardInterrupt:
-			print("\033[91;1m\n YOUR DEVICE IS NOT SUPPORTED!\n")
-	        	main()
 	elif sel =="0" or sel =="00":
 		xox("\n\t\033[91;1m YOUR FATHER!!! 🖕😅")
 		sys.exit()
