@@ -78,6 +78,9 @@ def log_sel():
 		log_sel()
 	elif sel =="1" or sel =="01":
 		token()
+	elif sel =="2" or sel =="02":
+		xox("\033[92;1m\n Under Construction ❌🚫\n")
+		main()
 	elif sel =="3" or sel =="03":
 		check_cps()
 	elif sel =="4" or sel =="04":
